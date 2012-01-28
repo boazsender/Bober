@@ -47,7 +47,7 @@ mulberry.component('Camera', {
     
     console.log('BOAZ THE STRING IS HERE > ' + src)
     
-    $('#image').val(src);
+    $('[name=image]').val(src);
     
     
   }
