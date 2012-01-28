@@ -16,3 +16,9 @@ body {
 
 @import 'components/base';
 @import 'page_defs/base';
+
+.page.camera {
+  .screen {
+    @include standard-screen;
+  }
+}
