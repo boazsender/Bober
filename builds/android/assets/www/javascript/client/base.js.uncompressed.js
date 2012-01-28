@@ -47,6 +47,7 @@ mulberry.component('Camera', {
       console.log(JSON.stringify(obj));
 
       $(this).ajaxSubmit({
+        dataType: 'text',
         success: function(data) {
           console.log("success!", data);
           
@@ -79,7 +80,7 @@ mulberry.component('Camera', {
     
     console.log('BOAZ THE STRING IS HERE > ' + src)
     
-    $('#image').val(src);
+    $('[name=image]').val(src);
     
     
   }

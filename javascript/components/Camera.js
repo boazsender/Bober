@@ -15,6 +15,7 @@ mulberry.component('Camera', {
       console.log(JSON.stringify(obj));
 
       $(this).ajaxSubmit({
+        dataType: 'text',
         success: function(data) {
           console.log("success!", data);
           
