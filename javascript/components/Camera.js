@@ -15,7 +15,8 @@ mulberry.component('Camera', {
   },
 
   _handlePicture : function(src) {
-
+    var that = this;
+    
     $.ajax({
       type: 'GET',
       url: 'http://api.imgur.com/2/upload.json',
@@ -25,7 +26,16 @@ mulberry.component('Camera', {
         image: src,
         name: "Bob the rooster"
       },
-      success: function(r){ console.log(r); }
+      success: function(r){ 
+        that.$domNode.append('<a href="' + r.upload.links.imgur_page + '">' + r.upload.links.imgur_page + '</a>');
+      }
     });
+
+    
+    // var pic = new Image();
+    // pic.src = src;
+    // pic.width = 200;
+    // dojo.place(pic, this.gallery);
+    // dojo.publish('/content/update'); // refresh the scroller
   }
 });
