@@ -1,7 +1,39 @@
+/*******************************************************************************
+ *
+ *  Copyright (c)  2011 Toura, LLC.	All Rights Reserved.
+ *  http://toura.com
+ *
+ *  LICENSE: https://github.com/Toura/mulberry/blob/master/LICENSE.txt
+ *
+ *******************************************************************************/
+dojo.provide("client.base");
+if(!dojo._hasResource['client.routes']){ //_hasResource checks added by build. Do not use _hasResource directly in your code.
+dojo._hasResource['client.routes'] = true;
+dojo.provide('client.routes');
+
+/**
+ * You can define custom routes here. To add a new route, run:
+ *
+ *    mulberry create route <path matcher>
+ *
+ * For example:
+ *
+ *    mulberry create route '/foo/:bar'
+ *
+ */
+
+mulberry.page('/takeapicture', {
+  pageDef : 'camera'
+}, true);
+
+}
+
+if(!dojo._hasResource['client.components.Camera']){ //_hasResource checks added by build. Do not use _hasResource directly in your code.
+dojo._hasResource['client.components.Camera'] = true;
 dojo.provide('client.components.Camera');
 
 mulberry.component('Camera', {
-  componentTemplate : dojo.cache('client.components', 'Camera/Camera.haml'),
+  componentTemplate : dojo.cache("client.components", "Camera/Camera.haml", ".component.camera\n  %button{ dojoAttachPoint : 'pictureButton' } Take a picture\n  %div{ dojoAttachPoint : 'gallery' }\n  %div{ dojoAttachPoint : 'imageSrc' }\n\n"),
 
   init : function() {
     this.connect(this.pictureButton, 'click', '_takePicture');
@@ -57,3 +89,13 @@ mulberry.component('Camera', {
     // dojo.publish('/content/update'); // refresh the scroller
   }
 });
+
+}
+
+/**
+ * You can write custom JavaScript here; this is also where Mulberry will add
+ * any dependencies you introduce via `mulberry create component`.
+ */
+
+
+

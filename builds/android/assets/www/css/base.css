@@ -1,0 +1,3718 @@
+/*
+FOR TESTING: These are all the variables that MAP should export
+
+user_font_scheme: #{$user_font_scheme}
+user_link_color: #{$user_link_color}
+user_background_color: #{$user_background_color}
+user_child_nav_color: #{$user_child_nav_color}
+*/
+/* line 16, /Users/boazsender/sources/mulberry/app/toura/style/_debug-tools.scss */
+div.debug-tools {
+  font-family: Helvetica Neue, sans-serif;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+/* line 24, /Users/boazsender/sources/mulberry/app/toura/style/_debug-tools.scss */
+div.debug-tools .buttons {
+  float: right;
+}
+/* line 28, /Users/boazsender/sources/mulberry/app/toura/style/_debug-tools.scss */
+div.debug-tools .button {
+  float: left;
+  padding: 2px 8px;
+  line-height: 2em;
+  background-color: #005998;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px;
+  border-right: 1px inset rgba(0, 0, 0, 0.2);
+}
+/* line 40, /Users/boazsender/sources/mulberry/app/toura/style/_debug-tools.scss */
+div.debug-tools .button:first-child {
+  -webkit-border-radius: 10px 0 0 0;
+}
+
+/* line 47, /Users/boazsender/sources/mulberry/app/toura/style/_debug-tools.scss */
+div.debug-message {
+  padding: 10px;
+  background-color: green;
+  color: #fff;
+  display: -webkit-box;
+  font-size: 80%;
+}
+/* line 54, /Users/boazsender/sources/mulberry/app/toura/style/_debug-tools.scss */
+div.debug-message div {
+  display: block;
+  -webkit-box-flex: 1;
+}
+/* line 59, /Users/boazsender/sources/mulberry/app/toura/style/_debug-tools.scss */
+div.debug-message .close {
+  cursor: pointer;
+  padding: 0 12px;
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 6, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+body {
+  height: 100%;
+  width: 100%;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+/* line 18, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+html, body, object, h1, h2, h3, h4, h5, h6, p, .component.body-text blockquote, blockquote, pre, abbr, acronym, address, cite, code, dfn, ins, q, sub, sup, var, dl, dt, dd, fieldset, form, label, legend, caption, menu {
+  font-size: 100%;
+}
+
+/* line 22, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+p, .component.body-text blockquote, h1, h2, h3, h4, h5, h6, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 28, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+article, aside, datalist, details, figcaption, figure, footer, header, hgroup, nav, output, progress, section, source, summary, video {
+  display: block;
+}
+
+/* line 32, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+body, div, ol, ul, li, nav, section, menu {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 38, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+fieldset {
+  border: 0;
+}
+
+/* line 42, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+ol, ul, menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 48, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* remember to define focus styles! */
+/* line 53, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 57, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+}
+
+/* line 63, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+tbody, tfoot, thead, tr, th, td {
+  vertical-align: top;
+}
+
+/* line 67, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 72, /Users/boazsender/sources/mulberry/app/toura/style/_reset.scss */
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@-webkit-keyframes spin {
+  /* line 2, /Users/boazsender/sources/mulberry/app/toura/style/_animations.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 5, /Users/boazsender/sources/mulberry/app/toura/style/_animations.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/ui/_scrollable.scss */
+.scrollable {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/ui/_scrollable.scss */
+.scrollable > * {
+  -webkit-transform: translateZ(0);
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/containers/Region/_region.scss */
+.region {
+  overflow: visible;
+}
+/* line 33, /Users/boazsender/sources/mulberry/app/toura/style/_helpers.scss */
+.region.hidden {
+  display: none !important;
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/containers/Screen/_screen.scss */
+.screen {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+/* line 33, /Users/boazsender/sources/mulberry/app/toura/style/_helpers.scss */
+.screen.hidden {
+  display: none !important;
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/containers/Viewport/_viewport.scss */
+.viewport {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-transform: translate3d(0, 0, 0);
+  position: absolute;
+  -webkit-animation-duration: 350ms;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+}
+/* line 15, /Users/boazsender/sources/mulberry/app/toura/containers/Viewport/_viewport.scss */
+.viewport .page {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 19, /Users/boazsender/sources/mulberry/app/toura/containers/Viewport/_viewport.scss */
+.viewport.pre-slide {
+  width: 200%;
+}
+/* line 23, /Users/boazsender/sources/mulberry/app/toura/containers/Viewport/_viewport.scss */
+.viewport.slide-left {
+  -webkit-animation-name: slide-left;
+}
+/* line 27, /Users/boazsender/sources/mulberry/app/toura/containers/Viewport/_viewport.scss */
+.viewport.slide-right {
+  -webkit-animation-name: slide-right;
+}
+/* line 31, /Users/boazsender/sources/mulberry/app/toura/containers/Viewport/_viewport.scss */
+.sibling-nav-visible .viewport {
+  -webkit-box-sizing: border-box;
+  border-bottom: 18px solid transparent;
+}
+
+@-webkit-keyframes slide-left {
+  /* line 38, /Users/boazsender/sources/mulberry/app/toura/containers/Viewport/_viewport.scss */
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  /* line 41, /Users/boazsender/sources/mulberry/app/toura/containers/Viewport/_viewport.scss */
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@-webkit-keyframes slide-right {
+  /* line 47, /Users/boazsender/sources/mulberry/app/toura/containers/Viewport/_viewport.scss */
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+  }
+
+  /* line 50, /Users/boazsender/sources/mulberry/app/toura/containers/Viewport/_viewport.scss */
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/containers/Page/_page.scss */
+.page {
+  height: 100%;
+  width: 100%;
+  -webkit-box-flex: 1;
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/style/_splash.scss */
+#splash {
+  -webkit-background-size: cover;
+  height: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+@media (orientation:landscape) {
+  /* line 1, /Users/boazsender/sources/mulberry/app/toura/style/_splash.scss */
+  #splash {
+    background-image: url("../media/load-screens/landscape.png");
+  }
+}
+@media (orientation:portrait) {
+  /* line 1, /Users/boazsender/sources/mulberry/app/toura/style/_splash.scss */
+  #splash {
+    background-image: url("../media/load-screens/portrait.png");
+  }
+}
+
+/* line 3, /Users/boazsender/sources/mulberry/app/toura/components/_component.scss */
+.component.hidden,
+.component .hidden {
+  display: none !important;
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.component.page-nav {
+  overflow: visible;
+  z-index: 2;
+}
+/* line 9, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.tablet .component.page-nav {
+  height: 60px;
+}
+/* line 13, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.phone .component.page-nav {
+  height: 40px;
+}
+/* line 17, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.component.page-nav > .top {
+  -webkit-transform: translate3d(0, 0, 0);
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+/* line 27, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.component.page-nav > .top a {
+  display: block;
+  -webkit-background-size: contain;
+}
+/* line 32, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.component.page-nav > .top h1 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-weight: normal;
+  padding: 5px 0;
+}
+/* line 40, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.component.page-nav > .more-drawer {
+  position: absolute;
+  z-index: 1;
+}
+/* line 46, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.tablet .component.page-nav > .top ul {
+  padding: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+/* line 51, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.tablet .component.page-nav > .top ul li {
+  -webkit-box-flex: 1;
+  width: 60px;
+}
+/* line 56, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.tablet .component.page-nav > .top ul li a {
+  height: 40px;
+}
+/* line 61, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.tablet .component.page-nav > .top ul li.search:first-child {
+  width: 120px;
+}
+/* line 69, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.phone .component.page-nav > .top h1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 74, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.phone .component.page-nav > .top div {
+  width: 60px;
+  padding: 5px 0;
+}
+/* line 78, /Users/boazsender/sources/mulberry/app/toura/components/PageNav/_page-nav.scss */
+.phone .component.page-nav > .top div a {
+  height: 30px;
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/components/DetailTitle/_detail-title.scss */
+.component.detail-title {
+  z-index: 1;
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.component.sibling-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: -webkit-transform 0.15s ease-in;
+}
+/* line 13, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.phone .component.sibling-nav {
+  height: 77px;
+  -webkit-transform: translate3d(0, 59px, 0);
+}
+/* line 18, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.tablet .component.sibling-nav {
+  height: 125px;
+  -webkit-transform: translate3d(0, 107px, 0);
+}
+/* line 23, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.component.sibling-nav.open {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 27, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.component.sibling-nav .handle {
+  height: 18px;
+}
+/* line 32, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.component.sibling-nav.open .handle .toggler {
+  -webkit-transform: rotate(180deg);
+}
+/* line 36, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.component.sibling-nav nav {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+/* line 37, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.tablet .component.sibling-nav nav {
+  height: 107px;
+}
+/* line 41, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.phone .component.sibling-nav nav {
+  height: 59px;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.component.sibling-nav nav > .region {
+  -webkit-box-flex: 1;
+}
+/* line 47, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.component.sibling-nav nav .controller {
+  width: 60px;
+  margin: 0 10px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.component.sibling-nav nav .controller > .region {
+  -webkit-box-flex: 1;
+}
+/* line 53, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.component.sibling-nav nav ol.nodes {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  height: 100%;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.component.sibling-nav nav ol.nodes > .region {
+  -webkit-box-flex: 1;
+}
+/* line 58, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.component.sibling-nav nav ol.nodes, .component.sibling-nav nav ol.nodes * {
+  overflow: visible;
+}
+/* line 62, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.component.sibling-nav nav ol.nodes > li {
+  width: 50%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.component.sibling-nav nav ol.nodes > li > .region {
+  -webkit-box-flex: 1;
+}
+/* line 68, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.component.sibling-nav nav ol.nodes > li.next {
+  text-align: right;
+}
+/* line 72, /Users/boazsender/sources/mulberry/app/toura/components/SiblingNav/_sibling-nav.scss */
+.component.sibling-nav nav ol.nodes > li:only-child {
+  width: 100%;
+}
+
+/* line 2, /Users/boazsender/sources/mulberry/app/toura/components/MoreDrawer/_more-drawer.scss */
+.component.more-drawer {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+}
+/* line 11, /Users/boazsender/sources/mulberry/app/toura/components/MoreDrawer/_more-drawer.scss */
+.phone .component.more-drawer {
+  -webkit-transform: translate3d(0, 40px, 0);
+  left: 0;
+}
+/* line 15, /Users/boazsender/sources/mulberry/app/toura/components/MoreDrawer/_more-drawer.scss */
+.phone .component.more-drawer.hidden {
+  display: block !important;
+  -webkit-transform: translate3d(0, -120px, 0);
+}
+/* line 22, /Users/boazsender/sources/mulberry/app/toura/components/MoreDrawer/_more-drawer.scss */
+.tablet .component.more-drawer {
+  -webkit-transform: translate3d(0, 60px, 0);
+  right: 70px;
+  width: 325px;
+}
+/* line 27, /Users/boazsender/sources/mulberry/app/toura/components/MoreDrawer/_more-drawer.scss */
+.tablet .component.more-drawer li.font-size {
+  border-right: 1px solid #777;
+}
+/* line 31, /Users/boazsender/sources/mulberry/app/toura/components/MoreDrawer/_more-drawer.scss */
+.tablet .component.more-drawer.hidden {
+  display: block !important;
+  -webkit-transform: translate3d(0, -62px, 0);
+}
+/* line 37, /Users/boazsender/sources/mulberry/app/toura/components/MoreDrawer/_more-drawer.scss */
+.component.more-drawer menu {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+/* line 42, /Users/boazsender/sources/mulberry/app/toura/components/MoreDrawer/_more-drawer.scss */
+.component.more-drawer menu li {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+}
+/* line 48, /Users/boazsender/sources/mulberry/app/toura/components/MoreDrawer/_more-drawer.scss */
+.component.more-drawer menu li a, .component.more-drawer menu li input {
+  display: block;
+  text-indent: -9999px;
+  width: 40px;
+  height: 40px;
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/components/GoogleMap/_google-map.scss */
+.component.google-map {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 6, /Users/boazsender/sources/mulberry/app/toura/components/GoogleMap/_google-map.scss */
+.component.google-map div {
+  overflow: visible;
+}
+/* line 10, /Users/boazsender/sources/mulberry/app/toura/components/GoogleMap/_google-map.scss */
+.component.google-map .map {
+  -webkit-box-flex: 1;
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/components/_ImageScroller/_image-scroller.scss */
+.component.image-scroller {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.component.image-scroller > .region {
+  -webkit-box-flex: 1;
+}
+/* line 5, /Users/boazsender/sources/mulberry/app/toura/components/_ImageScroller/_image-scroller.scss */
+.component.image-scroller ol.indicator {
+  line-height: 0;
+  overflow: visible;
+}
+/* line 10, /Users/boazsender/sources/mulberry/app/toura/components/_ImageScroller/_image-scroller.scss */
+.component.image-scroller .wrapper {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.component.image-scroller .wrapper > .region {
+  -webkit-box-flex: 1;
+}
+/* line 13, /Users/boazsender/sources/mulberry/app/toura/components/_ImageScroller/_image-scroller.scss */
+.component.image-scroller .wrapper ol.images {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+/* line 16, /Users/boazsender/sources/mulberry/app/toura/components/_ImageScroller/_image-scroller.scss */
+.component.image-scroller .wrapper ol.images li {
+  height: 100%;
+  float: left;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.component.image-scroller .wrapper ol.images li > .region {
+  -webkit-box-flex: 1;
+}
+/* line 25, /Users/boazsender/sources/mulberry/app/toura/components/_ImageScroller/_image-scroller.scss */
+.component.image-scroller .wrapper ol.images li .image {
+  -webkit-box-flex: 1;
+  background: no-repeat center center;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* line 2, /Users/boazsender/sources/mulberry/app/toura/components/NodeTitleBanner/_node-title-banner.scss */
+.component.node-title-banner .image {
+  background-position: center center;
+  -webkit-background-size: contain;
+}
+/* line 7, /Users/boazsender/sources/mulberry/app/toura/components/NodeTitleBanner/_node-title-banner.scss */
+.component.node-title-banner header {
+  -webkit-box-flex: 1;
+}
+
+/* line 2, /Users/boazsender/sources/mulberry/app/toura/components/PageHeaderImage/_page-header-image.scss */
+.component.page-header-image img {
+  display: block;
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/components/VideoPlayer/_video-player.scss */
+.component.video-player {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/* line 6, /Users/boazsender/sources/mulberry/app/toura/components/VideoPlayer/_video-player.scss */
+.component.video-player .overlay {
+  display: none;
+}
+/* line 11, /Users/boazsender/sources/mulberry/app/toura/components/VideoPlayer/_video-player.scss */
+.component.video-player.disabled video {
+  display: none;
+}
+/* line 15, /Users/boazsender/sources/mulberry/app/toura/components/VideoPlayer/_video-player.scss */
+.component.video-player.disabled .overlay {
+  display: block;
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/components/ZoomableImageGallery/_zoomable-image-gallery.scss */
+.component.zoomable-image-gallery {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  height: 100%;
+}
+/* line 5, /Users/boazsender/sources/mulberry/app/toura/components/ZoomableImageGallery/_zoomable-image-gallery.scss */
+.component.zoomable-image-gallery .content {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+/* line 8, /Users/boazsender/sources/mulberry/app/toura/components/ZoomableImageGallery/_zoomable-image-gallery.scss */
+.component.zoomable-image-gallery .content ol {
+  height: 100%;
+}
+/* line 12, /Users/boazsender/sources/mulberry/app/toura/components/ZoomableImageGallery/_zoomable-image-gallery.scss */
+.component.zoomable-image-gallery .content li {
+  height: 100%;
+  float: left;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+}
+/* line 22, /Users/boazsender/sources/mulberry/app/toura/components/ZoomableImageGallery/_zoomable-image-gallery.scss */
+.component.zoomable-image-gallery .content li .wrapper {
+  height: 100%;
+  -webkit-background-size: contain;
+  background: no-repeat center center;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 33, /Users/boazsender/sources/mulberry/app/toura/components/ZoomableImageGallery/_zoomable-image-gallery.scss */
+.component.zoomable-image-gallery.chrome-hidden .caption,
+.component.zoomable-image-gallery.chrome-hidden .image-nav {
+  display: none !important;
+}
+
+/* line 1, /Users/boazsender/sources/mulberry/app/toura/components/Hotspots/_hotspots.scss */
+.component.hotspots {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+/* line 2, /Users/boazsender/sources/mulberry/app/toura/components/Debug/_debug.scss */
+.component.debug table {
+  width: 100%;
+}
+/* line 5, /Users/boazsender/sources/mulberry/app/toura/components/Debug/_debug.scss */
+.component.debug table td, .component.debug table th {
+  padding: 8px;
+  border: 1px solid #aaa;
+}
+/* line 11, /Users/boazsender/sources/mulberry/app/toura/components/Debug/_debug.scss */
+.component.debug .actions {
+  margin: 10px 0;
+}
+/* line 14, /Users/boazsender/sources/mulberry/app/toura/components/Debug/_debug.scss */
+.component.debug .actions li {
+  padding: 10px;
+  background-color: #ccc;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+/* line 23, /Users/boazsender/sources/mulberry/app/toura/components/Debug/_debug.scss */
+.component.debug .status {
+  padding: 10px;
+  color: red;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/helpers/_forms.scss */
+form * {
+  font-family: Helvetica Neue, sans-serif;
+}
+
+/* line 7, /Users/boazsender/git/bober/themes/default/helpers/_forms.scss */
+input[type=submit],
+input[type=reset],
+button {
+  -webkit-border-radius: 4px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dadada), to(#9c9c9c));
+  border: 1px solid #9a9a9a;
+  font-size: 14px;
+  font-weight: bold;
+  color: #454545;
+  height: 26px;
+  padding: 2px 15px 0 15px;
+  margin: 5px;
+}
+/* line 46, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+input[type=submit].highlight,
+input[type=reset].highlight,
+button.highlight {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#d5d5d5));
+}
+
+/* line 15, /Users/boazsender/git/bober/themes/default/helpers/_forms.scss */
+input[type=text],
+input[type=search],
+input[type=email],
+input[type=password],
+textarea {
+  border: none;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: inset 0px 2px 5px 0px #aaa;
+  font-size: 15px;
+  height: 26px;
+  padding: 0 5px;
+  -webkit-appearance: textfield;
+}
+
+/* line 25, /Users/boazsender/git/bober/themes/default/helpers/_forms.scss */
+textarea {
+  display: block;
+  padding: 5px;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/_splash.scss */
+#splash .spinner {
+  width: 35px;
+  height: 35px;
+  background: url("resources/icons/spinner.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/_screen.scss */
+.screen {
+  background-position: center center;
+  -webkit-background-size: cover;
+}
+
+/* line 19 */
+body {
+  color: black;
+  font-family: Helvetica Neue, sans-serif;
+}
+
+/* line 24 */
+.page {
+  background-color: white;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.component.app-nav {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#646464), color-stop(0.5, #505050), to(#414141));
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 20, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.component.app-nav ol {
+  padding: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+/* line 26, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.component.app-nav a {
+  display: block;
+  text-indent: -9999px;
+  -webkit-background-size: contain;
+}
+/* line 11, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.component.app-nav .contents {
+  background: url(resources/icons/light/btn-app-nav-contents.png) no-repeat center center;
+}
+/* line 15, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.component.app-nav .contents:active {
+  background: url(resources/icons/dark/btn-app-nav-contents.png) no-repeat center center;
+}
+/* line 11, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.component.app-nav .search {
+  background: url(resources/icons/light/btn-app-nav-search.png) no-repeat center center;
+}
+/* line 15, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.component.app-nav .search:active {
+  background: url(resources/icons/dark/btn-app-nav-search.png) no-repeat center center;
+}
+/* line 11, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.component.app-nav .maps {
+  background: url(resources/icons/light/btn-app-nav-maps.png) no-repeat center center;
+}
+/* line 15, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.component.app-nav .maps:active {
+  background: url(resources/icons/dark/btn-app-nav-maps.png) no-repeat center center;
+}
+/* line 11, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.component.app-nav .about {
+  background: url(resources/icons/light/btn-app-nav-about.png) no-repeat center center;
+}
+/* line 15, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.component.app-nav .about:active {
+  background: url(resources/icons/dark/btn-app-nav-about.png) no-repeat center center;
+}
+/* line 11, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.component.app-nav .favorites {
+  background: url(resources/icons/light/btn-app-nav-favorites.png) no-repeat center center;
+}
+/* line 15, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.component.app-nav .favorites:active {
+  background: url(resources/icons/dark/btn-app-nav-favorites.png) no-repeat center center;
+}
+/* line 39, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.phone .component.app-nav li {
+  -webkit-box-flex: 1;
+  width: 145px;
+}
+/* line 43, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.phone .component.app-nav li a {
+  height: 25px;
+}
+/* line 49, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.tablet .component.app-nav {
+  width: 434px;
+  margin: 0 auto 20px auto;
+}
+/* line 53, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.tablet .component.app-nav li {
+  -webkit-box-flex: 1;
+  height: 50px;
+  width: 145px;
+}
+/* line 58, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.tablet .component.app-nav li a {
+  height: 50px;
+}
+/* line 63, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.tablet .component.app-nav {
+  -webkit-border-radius: 5px;
+}
+/* line 66, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.tablet .component.app-nav li {
+  border-right: 1px solid #777777;
+}
+/* line 69, /Users/boazsender/git/bober/themes/default/components/_app-nav.scss */
+.tablet .component.app-nav li:last-child {
+  border-right: none;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_page-nav.scss */
+.component.page-nav {
+  color: white;
+}
+/* line 4, /Users/boazsender/git/bober/themes/default/components/_page-nav.scss */
+.component.page-nav > .top {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6e6e6e), color-stop(0.5, #505050), to(#505050));
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 12, /Users/boazsender/git/bober/themes/default/components/_page-nav.scss */
+.tablet .component.page-nav > .top ul li.back,
+.tablet .component.page-nav > .top ul li.more {
+  border-right: 1px solid #777777;
+}
+/* line 156, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li a {
+  -webkit-background-size: contain;
+}
+/* line 160, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.back a {
+  background: url(resources/icons/light/btn-page-nav-back.png) no-repeat;
+  background-position-y: center;
+}
+/* line 165, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.back a:active {
+  background-image: url(resources/icons/dark/btn-page-nav-back.png);
+}
+/* line 169, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.back:first-child a {
+  background-position-x: left;
+}
+/* line 173, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.back:last-child a {
+  background-position-x: right;
+}
+/* line 156, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li a {
+  -webkit-background-size: contain;
+}
+/* line 160, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.home a {
+  background: url(resources/icons/light/btn-page-nav-home.png) no-repeat;
+  background-position-y: center;
+}
+/* line 165, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.home a:active {
+  background-image: url(resources/icons/dark/btn-page-nav-home.png);
+}
+/* line 169, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.home:first-child a {
+  background-position-x: left;
+}
+/* line 173, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.home:last-child a {
+  background-position-x: right;
+}
+/* line 156, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li a {
+  -webkit-background-size: contain;
+}
+/* line 160, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.menu a {
+  background: url(resources/icons/light/btn-page-nav-menu.png) no-repeat;
+  background-position-y: center;
+}
+/* line 165, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.menu a:active {
+  background-image: url(resources/icons/dark/btn-page-nav-menu.png);
+}
+/* line 169, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.menu:first-child a {
+  background-position-x: left;
+}
+/* line 173, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.menu:last-child a {
+  background-position-x: right;
+}
+/* line 156, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li a {
+  -webkit-background-size: contain;
+}
+/* line 160, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.search a {
+  background: url(resources/icons/light/btn-page-nav-search.png) no-repeat;
+  background-position-y: center;
+}
+/* line 165, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.search a:active {
+  background-image: url(resources/icons/dark/btn-page-nav-search.png);
+}
+/* line 169, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.search:first-child a {
+  background-position-x: left;
+}
+/* line 173, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.search:last-child a {
+  background-position-x: right;
+}
+/* line 156, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li a {
+  -webkit-background-size: contain;
+}
+/* line 160, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.more a {
+  background: url(resources/icons/light/btn-page-nav-more.png) no-repeat;
+  background-position-y: center;
+}
+/* line 165, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.more a:active {
+  background-image: url(resources/icons/dark/btn-page-nav-more.png);
+}
+/* line 169, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.more:first-child a {
+  background-position-x: left;
+}
+/* line 173, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.page-nav > .top ul li.more:last-child a {
+  background-position-x: right;
+}
+/* line 156, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.page-nav > .top div a {
+  -webkit-background-size: contain;
+}
+/* line 160, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.page-nav > .top div.back a {
+  background: url(resources/icons/light/btn-page-nav-back.png) no-repeat;
+  background-position-y: center;
+}
+/* line 165, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.page-nav > .top div.back a:active {
+  background-image: url(resources/icons/dark/btn-page-nav-back.png);
+}
+/* line 169, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.page-nav > .top div.back:first-child a {
+  background-position-x: left;
+}
+/* line 173, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.page-nav > .top div.back:last-child a {
+  background-position-x: right;
+}
+/* line 156, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.page-nav > .top div a {
+  -webkit-background-size: contain;
+}
+/* line 160, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.page-nav > .top div.more a {
+  background: url(resources/icons/light/btn-page-nav-more.png) no-repeat;
+  background-position-y: center;
+}
+/* line 165, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.page-nav > .top div.more a:active {
+  background-image: url(resources/icons/dark/btn-page-nav-more.png);
+}
+/* line 169, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.page-nav > .top div.more:first-child a {
+  background-position-x: left;
+}
+/* line 173, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.page-nav > .top div.more:last-child a {
+  background-position-x: right;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_detail-title.scss */
+.component.detail-title {
+  color: white;
+  background-color: #4b4b4b;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+/* line 7, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.detail-title {
+  font-size: 21px;
+  height: 60px;
+}
+/* line 12, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.detail-title {
+  font-size: 14px;
+  height: 40px;
+}
+/* line 8, /Users/boazsender/git/bober/themes/default/components/_detail-title.scss */
+.component.detail-title h1 {
+  display: block;
+  -webkit-box-flex: 1;
+  text-align: right;
+  font-weight: normal;
+  padding-right: 12px;
+}
+/* line 16, /Users/boazsender/git/bober/themes/default/components/_detail-title.scss */
+.component.detail-title .close {
+  display: block;
+  text-indent: -9999px;
+  background: transparent url("resources/icons/light/btn-page-nav-close.png") no-repeat center center;
+  -webkit-background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
+  padding-left: 12px;
+}
+/* line 20, /Users/boazsender/git/bober/themes/default/components/_detail-title.scss */
+.component.detail-title .close:active {
+  display: block;
+  text-indent: -9999px;
+  background: transparent url("resources/icons/dark/btn-page-nav-close.png") no-repeat center center;
+  -webkit-background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_sibling-nav.scss */
+.component.sibling-nav {
+  font-size: 13px;
+  line-height: 15px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#646464), color-stop(0.5, #505050), to(#414141));
+  -webkit-box-shadow: 1px 0 5px 0 rgba(0, 0, 0, 0.5);
+  color: white;
+}
+/* line 9, /Users/boazsender/git/bober/themes/default/components/_sibling-nav.scss */
+.component.sibling-nav .handle {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#646464), color-stop(0.5, #505050), to(#414141));
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 13, /Users/boazsender/git/bober/themes/default/components/_sibling-nav.scss */
+.component.sibling-nav .handle .toggler {
+  display: block;
+  text-indent: -9999px;
+  background: transparent url("resources/icons/icon-sibling-nav-toggle-arrow.png") no-repeat center center;
+  -webkit-background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
+  width: 100%;
+}
+/* line 20, /Users/boazsender/git/bober/themes/default/components/_sibling-nav.scss */
+.component.sibling-nav nav .prev.controller {
+  display: block;
+  text-indent: -9999px;
+  background: transparent url("resources/icons/btn-sibling-nav-prev-on.png") no-repeat center center;
+  -webkit-background-size: 20px 20px;
+  width: 20px;
+  height: 100%;
+}
+/* line 23, /Users/boazsender/git/bober/themes/default/components/_sibling-nav.scss */
+.component.sibling-nav nav .prev.controller.inactive {
+  display: block;
+  text-indent: -9999px;
+  background: transparent url("resources/icons/btn-sibling-nav-prev-off.png") no-repeat center center;
+  -webkit-background-size: 20px 20px;
+  width: 20px;
+  height: 100%;
+}
+/* line 28, /Users/boazsender/git/bober/themes/default/components/_sibling-nav.scss */
+.component.sibling-nav nav .next.controller {
+  display: block;
+  text-indent: -9999px;
+  background: transparent url("resources/icons/btn-sibling-nav-next-on.png") no-repeat center center;
+  -webkit-background-size: 20px 20px;
+  width: 20px;
+  height: 100%;
+}
+/* line 31, /Users/boazsender/git/bober/themes/default/components/_sibling-nav.scss */
+.component.sibling-nav nav .next.controller.inactive {
+  display: block;
+  text-indent: -9999px;
+  background: transparent url("resources/icons/btn-sibling-nav-next-off.png") no-repeat center center;
+  -webkit-background-size: 20px 20px;
+  width: 20px;
+  height: 100%;
+}
+/* line 37, /Users/boazsender/git/bober/themes/default/components/_sibling-nav.scss */
+.component.sibling-nav nav ol.nodes > li.prev > span {
+  padding: 15px 15px 15px 0;
+}
+/* line 41, /Users/boazsender/git/bober/themes/default/components/_sibling-nav.scss */
+.component.sibling-nav nav ol.nodes > li.next > span {
+  padding: 15px 0 15px 15px;
+}
+/* line 46, /Users/boazsender/git/bober/themes/default/components/_sibling-nav.scss */
+.ios .component.sibling-nav nav ol.nodes > li span {
+  position: relative;
+  top: -0.2em;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_search-input.scss */
+.component.search-input {
+  color: white;
+  background-color: #4b4b4b;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+/* line 7, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.search-input {
+  font-size: 21px;
+  height: 60px;
+}
+/* line 12, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.search-input {
+  font-size: 14px;
+  height: 40px;
+}
+/* line 8, /Users/boazsender/git/bober/themes/default/components/_search-input.scss */
+.component.search-input .back {
+  display: block;
+  text-indent: -9999px;
+  background: transparent url("resources/icons/light/btn-page-nav-back.png") no-repeat center center;
+  -webkit-background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  background-position: right;
+  padding-left: 5px;
+}
+/* line 13, /Users/boazsender/git/bober/themes/default/components/_search-input.scss */
+.component.search-input .back:active {
+  background-image: url("resources/icons/dark/btn-page-nav-back.png");
+}
+/* line 18, /Users/boazsender/git/bober/themes/default/components/_search-input.scss */
+.component.search-input form {
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+/* line 21, /Users/boazsender/git/bober/themes/default/components/_search-input.scss */
+.component.search-input form input[type=search] {
+  background: white url(resources/icons/icon-search-input.png) no-repeat 6px center;
+}
+/* line 25, /Users/boazsender/git/bober/themes/default/components/_search-input.scss */
+.ios .component.search-input form {
+  margin-top: -1px;
+}
+/* line 29, /Users/boazsender/git/bober/themes/default/components/_search-input.scss */
+.phone .component.search-input form {
+  padding: 0 9px;
+}
+/* line 33, /Users/boazsender/git/bober/themes/default/components/_search-input.scss */
+.tablet .component.search-input form {
+  padding: 12px;
+}
+/* line 39, /Users/boazsender/git/bober/themes/default/components/_search-input.scss */
+.component.search-input form input[type=search] {
+  padding: 0 0 0 25px;
+  width: 50%;
+}
+/* line 44, /Users/boazsender/git/bober/themes/default/components/_search-input.scss */
+.component.search-input form input[type=submit] {
+  margin-left: 10px;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/_delete-button.scss */
+.delete.button {
+  width: 30px;
+  background: url(resources/icons/btn-delete.png) center center no-repeat transparent;
+  -webkit-background-size: contain;
+}
+/* line 6, /Users/boazsender/git/bober/themes/default/_delete-button.scss */
+.delete.button.deleting {
+  background-image: url(resources/icons/btn-delete-confirm.png);
+}
+
+/* line 201, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.asset-list li a {
+  line-height: 1.6em;
+  display: block;
+  margin: 0 0 1px 0;
+  font-weight: bold;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 213, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.multi-line-child-nodes .component.asset-list li a {
+  overflow: visible;
+  white-space: normal;
+}
+/* line 224, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.asset-list.not-moving a:active {
+  background-color: rgba(153, 153, 153, 0.5);
+}
+/* line 4, /Users/boazsender/git/bober/themes/default/components/_asset-list.scss */
+.component.asset-list li {
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 28px 26px;
+}
+/* line 11, /Users/boazsender/git/bober/themes/default/components/_asset-list.scss */
+.component.asset-list li a {
+  padding: 10px 10px 10px 50px;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/components/_video-list.scss */
+.component.video-list li {
+  background-image: url("resources/icons/dark/icon-asset-video.png");
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/components/_audio-list.scss */
+.component.audio-list li {
+  background-image: url("resources/icons/dark/icon-asset-audio.png");
+}
+
+/* line 3, /Users/boazsender/git/bober/themes/default/components/_audio-player.scss */
+.android .component.audio-player {
+  padding-top: 7px;
+}
+/* line 7, /Users/boazsender/git/bober/themes/default/components/_audio-player.scss */
+.ios .component.audio-player {
+  text-align: center;
+  padding-top: 10px;
+}
+/* line 12, /Users/boazsender/git/bober/themes/default/components/_audio-player.scss */
+.component.audio-player audio {
+  width: 60%;
+  padding-top: 8px;
+}
+/* line 17, /Users/boazsender/git/bober/themes/default/components/_audio-player.scss */
+.component.audio-player.hidden {
+  display: none;
+}
+/* line 21, /Users/boazsender/git/bober/themes/default/components/_audio-player.scss */
+.component.audio-player form {
+  width: 60px;
+  margin: 0 auto;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-border-radius: 5px;
+  padding: 0px 0;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#646464), color-stop(0.5, #505050), to(#414141));
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 33, /Users/boazsender/git/bober/themes/default/components/_audio-player.scss */
+.component.audio-player form input {
+  -webkit-box-flex: 1;
+  margin: 0;
+  display: block;
+  border: none;
+  height: 30px;
+  font-size: 15px;
+  background-color: transparent;
+}
+/* line 44, /Users/boazsender/git/bober/themes/default/components/_audio-player.scss */
+.component.audio-player form input.play {
+  display: block;
+  text-indent: -9999px;
+  background: transparent url("resources/icons/btn-play.png") no-repeat center center;
+  -webkit-background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+}
+/* line 51, /Users/boazsender/git/bober/themes/default/components/_audio-player.scss */
+.component.audio-player.playing input.play {
+  display: block;
+  text-indent: -9999px;
+  background: transparent url("resources/icons/btn-pause.png") no-repeat center center;
+  -webkit-background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text {
+  line-height: 1.45em;
+}
+/* line 111, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-small .component.body-text {
+  font-size: 75%;
+}
+/* line 115, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-large .component.body-text {
+  font-size: 150%;
+}
+/* line 4, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text p:last-child, .component.body-text blockquote:last-child {
+  margin-bottom: 0;
+}
+/* line 8, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text h1, .component.body-text h2, .component.body-text h3, .component.body-text h4, .component.body-text h5, .component.body-text h6 {
+  line-height: 1.45em;
+}
+/* line 111, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-small .component.body-text h1, .font-size-small .component.body-text h2, .font-size-small .component.body-text h3, .font-size-small .component.body-text h4, .font-size-small .component.body-text h5, .font-size-small .component.body-text h6 {
+  font-size: 75%;
+}
+/* line 115, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-large .component.body-text h1, .font-size-large .component.body-text h2, .font-size-large .component.body-text h3, .font-size-large .component.body-text h4, .font-size-large .component.body-text h5, .font-size-large .component.body-text h6 {
+  font-size: 150%;
+}
+/* line 12, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text h1 {
+  font-size: 32px;
+}
+/* line 16, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+/* line 21, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text h3 {
+  font-size: 19px;
+}
+/* line 25, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text h4 {
+  font-size: 16px;
+  font-weight: normal;
+}
+/* line 30, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text h5 {
+  font-size: 13px;
+}
+/* line 34, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text h6 {
+  font-size: 11px;
+  font-weight: normal;
+}
+/* line 39, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text p, .component.body-text blockquote {
+  margin: 0 0 .9em 0;
+}
+/* line 43, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text blockquote {
+  margin: 0 40px;
+}
+/* line 48, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text ol, .component.body-text ul {
+  padding-bottom: 1em;
+}
+/* line 52, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text ol li {
+  list-style-type: decimal;
+}
+/* line 56, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text ul li {
+  list-style-type: disc;
+}
+/* line 60, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text li {
+  position: static;
+  margin-left: 10px;
+  display: list-item;
+  list-style-position: inside;
+  padding-bottom: 0.5em;
+  text-indent: 10px;
+}
+/* line 69, /Users/boazsender/git/bober/themes/default/components/_body-text.scss */
+.component.body-text a {
+  color: blue;
+}
+
+/* line 16, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+.component.child-node-grid {
+  padding: 4px;
+}
+/* line 18, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+.tablet .component.child-node-grid {
+  padding: 10px;
+}
+/* line 22, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+.component.child-node-grid li {
+  float: left;
+}
+/* line 25, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+.component.child-node-grid li a {
+  display: block;
+  color: #262626;
+}
+/* line 31, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+.component.child-node-grid li a .image {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+/* line 35, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+.component.child-node-grid li a h3 {
+  margin: 8px 0 0 2px;
+  font-size: 15px;
+  line-height: 18px;
+}
+/* line 43, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+.tablet .component.child-node-grid {
+  padding: 10px;
+}
+/* line 46, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+.tablet .component.child-node-grid h3 {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: -2px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 7px 10px;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+.ios.phone .component.child-node-grid li {
+  height: 153px;
+  width: 145px;
+}
+/* line 9, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+.ios.phone .component.child-node-grid li .image {
+  width: 145px;
+  height: 109px;
+}
+@media (orientation:portrait) {
+  /* line 63, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+  .component.child-node-grid li {
+    margin: 5px;
+  }
+  /* line 68, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+  .tablet .component.child-node-grid li {
+    margin: 10px;
+  }
+  /* line 5, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+  .tablet .component.child-node-grid.size-large li {
+    height: 266px;
+    width: 354px;
+  }
+  /* line 9, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+  .tablet .component.child-node-grid.size-large li .image {
+    width: 354px;
+    height: 266px;
+  }
+  /* line 5, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+  .tablet .component.child-node-grid.size-medium li {
+    height: 172px;
+    width: 229px;
+  }
+  /* line 9, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+  .tablet .component.child-node-grid.size-medium li .image {
+    width: 229px;
+    height: 172px;
+  }
+}
+@media (orientation:landscape) {
+  /* line 82, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+  .component.child-node-grid li {
+    margin: 6px;
+  }
+  /* line 87, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+  .tablet .component.child-node-grid li {
+    margin: 10px;
+  }
+  /* line 5, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+  .tablet .component.child-node-grid.size-large li {
+    height: 236px;
+    width: 314px;
+  }
+  /* line 9, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+  .tablet .component.child-node-grid.size-large li .image {
+    width: 314px;
+    height: 236px;
+  }
+  /* line 5, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+  .tablet .component.child-node-grid.size-medium li {
+    height: 174px;
+    width: 231px;
+  }
+  /* line 9, /Users/boazsender/git/bober/themes/default/components/_child-node-grid.scss */
+  .tablet .component.child-node-grid.size-medium li .image {
+    width: 231px;
+    height: 174px;
+  }
+}
+
+/* line 201, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.child-nodes li a {
+  line-height: 1.6em;
+  display: block;
+  margin: 0 0 1px 0;
+  font-weight: bold;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 213, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.multi-line-child-nodes .component.child-nodes li a {
+  overflow: visible;
+  white-space: normal;
+}
+/* line 224, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.child-nodes.not-moving a:active {
+  background-color: rgba(153, 153, 153, 0.5);
+}
+/* line 4, /Users/boazsender/git/bober/themes/default/components/_child-nodes.scss */
+.component.child-nodes a {
+  padding: 6px 50px 6px 10px;
+  -webkit-box-sizing: padding-box;
+  background-image: url("resources/icons/dark/chevron.png");
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  background-size: 8px 20px;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_column-header-image.scss */
+.component.column-header-image {
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 4, /Users/boazsender/git/bober/themes/default/components/_column-header-image.scss */
+.component.column-header-image img {
+  display: block;
+  width: 100%;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.component.drop-down-text {
+  z-index: 1;
+  position: absolute;
+  overflow: visible;
+  color: white;
+  line-height: 1.2em;
+}
+/* line 9, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.phone .component.drop-down-text {
+  font-size: 12px;
+}
+/* line 13, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.tablet .component.drop-down-text {
+  font-size: 16px;
+}
+/* line 27, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.component.drop-down-text .button {
+  margin: 0 auto;
+  background-color: #505050;
+  -webkit-border-radius: 0 0 8px 8px;
+  text-align: center;
+  padding: 5px;
+}
+/* line 34, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.phone .component.drop-down-text .button {
+  width: 100px;
+}
+/* line 38, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.tablet .component.drop-down-text .button {
+  width: 130px;
+}
+/* line 42, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.component.drop-down-text .button span {
+  background-image: url(resources/icons/icon-target.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: 12px 12px;
+}
+/* line 43, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.phone .component.drop-down-text .button span {
+  padding-left: 15px;
+}
+/* line 47, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.tablet .component.drop-down-text .button span {
+  padding-left: 20px;
+}
+/* line 60, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.component.drop-down-text .open-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+/* line 66, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.component.drop-down-text .open-wrapper .button.open {
+  opacity: 1;
+  -webkit-transition: opacity .3s ease-in;
+}
+/* line 21, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.component.drop-down-text .open-wrapper .button.open.hidden {
+  opacity: 0;
+  display: block !important;
+}
+/* line 71, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.component.drop-down-text .text-wrapper {
+  z-index: -1;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease-in;
+}
+/* line 72, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.phone .component.drop-down-text .text-wrapper {
+  width: 250px;
+}
+/* line 76, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.tablet .component.drop-down-text .text-wrapper {
+  width: 350px;
+}
+/* line 80, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.component.drop-down-text .text-wrapper.hidden {
+  height: 0;
+}
+/* line 21, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.component.drop-down-text .text-wrapper.hidden {
+  opacity: 0;
+  display: block !important;
+}
+/* line 89, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.component.drop-down-text .text-wrapper .body-text-container {
+  background-color: #505050;
+}
+/* line 93, /Users/boazsender/git/bober/themes/default/components/_drop-down-text.scss */
+.component.drop-down-text .text-wrapper p, .component.drop-down-text .text-wrapper .component.body-text blockquote, .component.body-text .component.drop-down-text .text-wrapper blockquote {
+  padding: 15px;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_favorites.scss */
+.component.favorites {
+  height: 100%;
+  border-bottom: 1px solid;
+  background-color: #f2f2f2;
+  border-bottom-color: #d4d4d4;
+}
+/* line 6, /Users/boazsender/git/bober/themes/default/components/_favorites.scss */
+.component.favorites li {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 22px;
+  padding: 15px;
+  border-bottom: 1px solid #e9e9e9;
+  min-height: 50px;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.component.favorites li > .region {
+  -webkit-box-flex: 1;
+}
+/* line 14, /Users/boazsender/git/bober/themes/default/components/_favorites.scss */
+.component.favorites li a {
+  color: black;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-flex: 1;
+  margin-right: 10px;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.component.favorites li a > .region {
+  -webkit-box-flex: 1;
+}
+/* line 20, /Users/boazsender/git/bober/themes/default/components/_favorites.scss */
+.component.favorites li a .img {
+  width: 67px;
+  height: 50px;
+  -webkit-background-size: cover;
+  background: no-repeat center center;
+  margin-right: 10px;
+}
+/* line 27, /Users/boazsender/git/bober/themes/default/components/_favorites.scss */
+.component.favorites li a .img.default {
+  background-image: url(resources/icons/icon-favorite.png);
+  -webkit-background-size: 67px 50px;
+}
+/* line 33, /Users/boazsender/git/bober/themes/default/components/_favorites.scss */
+.component.favorites li a .text {
+  -webkit-box-flex: 1;
+}
+/* line 36, /Users/boazsender/git/bober/themes/default/components/_favorites.scss */
+.component.favorites li a .text h2 {
+  font-weight: normal;
+}
+/* line 40, /Users/boazsender/git/bober/themes/default/components/_favorites.scss */
+.component.favorites li a .text p, .component.favorites li a .text .component.body-text blockquote, .component.body-text .component.favorites li a .text blockquote {
+  font-size: 0.9em;
+  font-style: italic;
+}
+/* line 48, /Users/boazsender/git/bober/themes/default/components/_favorites.scss */
+.component.favorites li .delete {
+  width: 30px;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+.component.feed-item-detail {
+  padding: 10px;
+}
+/* line 4, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+.component.feed-item-detail h2 {
+  font-size: 22px;
+  line-height: 1.45em;
+  line-height: 1.2em;
+  padding-bottom: .2em;
+}
+/* line 111, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-small .component.feed-item-detail h2 {
+  font-size: 75%;
+}
+/* line 115, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-large .component.feed-item-detail h2 {
+  font-size: 150%;
+}
+/* line 11, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+.component.feed-item-detail .image {
+  height: 180px;
+  -webkit-background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 18, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+.component.feed-item-detail .date {
+  color: #4d4d4d;
+  font-weight: bold;
+  padding: 10px 0;
+  font-size: 12px;
+}
+/* line 25, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+.component.feed-item-detail .item-body {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.45em;
+}
+/* line 111, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-small .component.feed-item-detail .item-body {
+  font-size: 75%;
+}
+/* line 115, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-large .component.feed-item-detail .item-body {
+  font-size: 150%;
+}
+/* line 30, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+.component.feed-item-detail .item-body p, .component.feed-item-detail .item-body .component.body-text blockquote, .component.body-text .component.feed-item-detail .item-body blockquote {
+  margin-bottom: 1em;
+}
+/* line 35, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+.component.feed-item-detail a.full {
+  display: block;
+  padding-top: 1em;
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+/* line 41, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+.component.feed-item-detail a.full:after {
+  content: '»';
+  padding-left: 5px;
+}
+/* line 48, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+.tablet .component.feed-item-detail h2 {
+  font-size: 26px;
+}
+/* line 52, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+.tablet .component.feed-item-detail .image {
+  height: 250px;
+  margin: 0 auto;
+}
+
+@media (orientation:landscape) {
+  /* line 61, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+  .tablet .component.feed-item-detail {
+    padding: 30px;
+  }
+  /* line 64, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+  .tablet .component.feed-item-detail .image {
+    margin: 0 auto 20px auto;
+  }
+}
+@media (orientation:portrait) {
+  /* line 73, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+  .tablet .component.feed-item-detail {
+    padding: 20px;
+  }
+  /* line 76, /Users/boazsender/git/bober/themes/default/components/_feed-item-detail.scss */
+  .tablet .component.feed-item-detail .image {
+    margin: 10px auto;
+  }
+}
+/* line 3, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+.component.feed-item-list header {
+  color: #666666;
+  padding: 10px;
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.component.feed-item-list header > .region {
+  -webkit-box-flex: 1;
+}
+/* line 10, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+.component.feed-item-list header > div {
+  -webkit-box-flex: 1;
+}
+/* line 14, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+.component.feed-item-list header .spinner {
+  display: block;
+  width: 1.3em;
+  height: 1.3em;
+}
+/* line 20, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+.component.feed-item-list header .refresh {
+  font-weight: bold;
+  text-align: right;
+  overflow: visible;
+}
+/* line 28, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+.component.feed-item-list.loading .refresh {
+  opacity: .5;
+}
+/* line 32, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+.component.feed-item-list.loading .spinner {
+  background: url("resources/icons/spinner-2.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 38, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+.component.feed-item-list li > div {
+  margin: 6px 0;
+  overflow: visible;
+  padding: 10px 13px 10px 10px;
+}
+/* line 43, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+.component.feed-item-list li > div:before {
+  content: "";
+  border-top: 1px solid #e9e9e9;
+  display: block;
+  position: relative;
+  top: -16px;
+}
+/* line 52, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+.component.feed-item-list li.active > div {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* line 56, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+.component.feed-item-list li .image {
+  width: 60px;
+  height: 60px;
+  float: right;
+  margin: 4px 0 0 4px;
+  -webkit-background-size: cover;
+}
+/* line 64, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+.component.feed-item-list li h2 {
+  font-size: 18px;
+  line-height: 1.45em;
+  line-height: 1.2em;
+  padding-bottom: .4em;
+}
+/* line 111, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-small .component.feed-item-list li h2 {
+  font-size: 75%;
+}
+/* line 115, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-large .component.feed-item-list li h2 {
+  font-size: 150%;
+}
+/* line 71, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+.component.feed-item-list li .summary {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.45em;
+}
+/* line 111, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-small .component.feed-item-list li .summary {
+  font-size: 75%;
+}
+/* line 115, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-large .component.feed-item-list li .summary {
+  font-size: 150%;
+}
+/* line 77, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+.component.feed-item-list li .date {
+  font-size: 12px;
+  font-weight: bold;
+  color: gray;
+  line-height: 1.45em;
+  padding-top: .2em;
+}
+/* line 111, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-small .component.feed-item-list li .date {
+  font-size: 75%;
+}
+/* line 115, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-large .component.feed-item-list li .date {
+  font-size: 150%;
+}
+
+@media (orientation:portrait) {
+  /* line 91, /Users/boazsender/git/bober/themes/default/components/_feed-item-list.scss */
+  .tablet .component.feed-item-list .summary,
+  .tablet .component.feed-item-list .image {
+    display: none;
+  }
+}
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_hotspots.scss */
+.component.hotspots {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_image-caption.scss */
+.component.image-caption {
+  font-size: 14px;
+  color: #666666;
+}
+/* line 261, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.image-caption {
+  font-size: 13px;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/components/_image-caption.scss */
+.tablet .component.image-caption.short-caption {
+  text-align: center;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/components/_image-gallery.scss */
+.phone .component.image-gallery {
+  padding: 15px 0 15px 0;
+}
+/* line 6, /Users/boazsender/git/bober/themes/default/components/_image-gallery.scss */
+.tablet .component.image-gallery {
+  padding: 15px 0 25px 0;
+}
+/* line 10, /Users/boazsender/git/bober/themes/default/components/_image-gallery.scss */
+.component.image-gallery .wrapper {
+  -webkit-box-flex: 30;
+}
+/* line 13, /Users/boazsender/git/bober/themes/default/components/_image-gallery.scss */
+.component.image-gallery .wrapper .image {
+  -webkit-background-size: contain;
+}
+/* line 19, /Users/boazsender/git/bober/themes/default/components/_image-gallery.scss */
+.phone .component.image-gallery ol.indicator {
+  padding: 10px 0 0 0;
+  margin-bottom: -10px;
+}
+/* line 23, /Users/boazsender/git/bober/themes/default/components/_image-gallery.scss */
+.phone .component.image-gallery ol.indicator li {
+  font-size: 40px;
+}
+/* line 28, /Users/boazsender/git/bober/themes/default/components/_image-gallery.scss */
+.tablet .component.image-gallery ol.indicator {
+  padding: 14px 0 0 0;
+  margin-bottom: -20px;
+}
+/* line 32, /Users/boazsender/git/bober/themes/default/components/_image-gallery.scss */
+.tablet .component.image-gallery ol.indicator li {
+  font-size: 60px;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/components/_image-scroller.scss */
+.component.image-scroller ol.indicator {
+  text-align: center;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/components/_image-scroller.scss */
+.component.image-scroller ol.indicator li {
+  display: inline;
+  color: white;
+  -webkit-text-stroke: 0.5px #cccccc;
+}
+/* line 11, /Users/boazsender/git/bober/themes/default/components/_image-scroller.scss */
+.component.image-scroller ol.indicator li.active {
+  color: #666666;
+  -webkit-text-stroke: 0;
+}
+
+/* line 279, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.location-list {
+  padding: 8px;
+}
+/* line 283, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.location-list {
+  padding: 12px;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/components/_location-list.scss */
+.component.location-list li {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-top: 1px solid #e9e9e9;
+}
+/* line 10, /Users/boazsender/git/bober/themes/default/components/_location-list.scss */
+.component.location-list li .address {
+  border: 1px solid #e9e9e9;
+  padding: 4px 8px;
+  -webkit-border-radius: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.45em;
+  line-height: 20px;
+  margin: 15px 0;
+  text-align: center;
+}
+/* line 111, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-small .component.location-list li .address {
+  font-size: 75%;
+}
+/* line 115, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-large .component.location-list li .address {
+  font-size: 150%;
+}
+/* line 23, /Users/boazsender/git/bober/themes/default/components/_location-list.scss */
+.component.location-list li .directions {
+  display: block;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3d3d3), to(#9d9d9d));
+  -webkit-border-radius: 2px;
+  border: 1px solid #9d9d9d;
+  color: #2b2b2b;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 2em;
+  padding: 2px 15px 0 15px;
+  margin: 5px 0;
+  text-shadow: rgba(255, 255, 255, 0.5) 0 -1px 0;
+  background-image: url("resources/icons/btn-map.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3d3d3), to(#9d9d9d));
+  background-position: left center, center center;
+  -webkit-background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 91, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.location-list li .directions:active {
+  background-image: url("resources/icons/btn-map.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b8b8b8), to(#848484));
+}
+/* line 101, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.location-list li .directions .label {
+  margin-right: 5px;
+  color: #7d7d7d;
+}
+/* line 27, /Users/boazsender/git/bober/themes/default/components/_location-list.scss */
+.component.location-list li .website {
+  display: block;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3d3d3), to(#9d9d9d));
+  -webkit-border-radius: 2px;
+  border: 1px solid #9d9d9d;
+  color: #2b2b2b;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 2em;
+  padding: 2px 15px 0 15px;
+  margin: 5px 0;
+  text-shadow: rgba(255, 255, 255, 0.5) 0 -1px 0;
+  background-image: url("resources/icons/btn-website.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3d3d3), to(#9d9d9d));
+  background-position: left center, center center;
+  -webkit-background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 91, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.location-list li .website:active {
+  background-image: url("resources/icons/btn-website.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b8b8b8), to(#848484));
+}
+/* line 101, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.location-list li .website .label {
+  margin-right: 5px;
+  color: #7d7d7d;
+}
+/* line 31, /Users/boazsender/git/bober/themes/default/components/_location-list.scss */
+.component.location-list li .phone-number {
+  display: block;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3d3d3), to(#9d9d9d));
+  -webkit-border-radius: 2px;
+  border: 1px solid #9d9d9d;
+  color: #2b2b2b;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 2em;
+  padding: 2px 15px 0 15px;
+  margin: 5px 0;
+  text-shadow: rgba(255, 255, 255, 0.5) 0 -1px 0;
+  background-image: url("resources/icons/btn-phone.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3d3d3), to(#9d9d9d));
+  background-position: left center, center center;
+  -webkit-background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 91, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.location-list li .phone-number:active {
+  background-image: url("resources/icons/btn-phone.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b8b8b8), to(#848484));
+}
+/* line 101, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.location-list li .phone-number .label {
+  margin-right: 5px;
+  color: #7d7d7d;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_more-drawer.scss */
+.component.more-drawer {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4b4b4b), to(#2c2c2c));
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 11, /Users/boazsender/git/bober/themes/default/components/_more-drawer.scss */
+.phone .component.more-drawer section > * {
+  border-top: 2px groove #505050;
+}
+/* line 15, /Users/boazsender/git/bober/themes/default/components/_more-drawer.scss */
+.phone .component.more-drawer section:first-child > * {
+  border-top: none;
+}
+/* line 21, /Users/boazsender/git/bober/themes/default/components/_more-drawer.scss */
+.tablet .component.more-drawer li.font-size {
+  border-right: 1px solid #777777;
+}
+/* line 26, /Users/boazsender/git/bober/themes/default/components/_more-drawer.scss */
+.component.more-drawer menu {
+  margin: 8px 8px 4px 8px;
+}
+/* line 30, /Users/boazsender/git/bober/themes/default/components/_more-drawer.scss */
+.component.more-drawer menu li.favorite input {
+  -webkit-appearance: none;
+  border: none;
+  background: url(resources/icons/light/btn-page-nav-favoriteoff.png) no-repeat;
+  -webkit-background-size: contain;
+  background-position-y: center;
+}
+/* line 37, /Users/boazsender/git/bober/themes/default/components/_more-drawer.scss */
+.component.more-drawer menu li.favorite input:checked {
+  background: url(resources/icons/light/btn-page-nav-favoriteon.png) no-repeat;
+}
+/* line 156, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li a {
+  -webkit-background-size: contain;
+}
+/* line 160, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.home a {
+  background: url(resources/icons/light/btn-page-nav-home.png) no-repeat;
+  background-position-y: center;
+}
+/* line 165, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.home a:active {
+  background-image: url(resources/icons/dark/btn-page-nav-home.png);
+}
+/* line 169, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.home:first-child a {
+  background-position-x: left;
+}
+/* line 173, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.home:last-child a {
+  background-position-x: right;
+}
+/* line 156, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li a {
+  -webkit-background-size: contain;
+}
+/* line 160, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.font-size a {
+  background: url(resources/icons/light/btn-page-nav-font-size.png) no-repeat;
+  background-position-y: center;
+}
+/* line 165, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.font-size a:active {
+  background-image: url(resources/icons/dark/btn-page-nav-font-size.png);
+}
+/* line 169, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.font-size:first-child a {
+  background-position-x: left;
+}
+/* line 173, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.font-size:last-child a {
+  background-position-x: right;
+}
+/* line 156, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li a {
+  -webkit-background-size: contain;
+}
+/* line 160, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.search a {
+  background: url(resources/icons/light/btn-page-nav-search.png) no-repeat;
+  background-position-y: center;
+}
+/* line 165, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.search a:active {
+  background-image: url(resources/icons/dark/btn-page-nav-search.png);
+}
+/* line 169, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.search:first-child a {
+  background-position-x: left;
+}
+/* line 173, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.search:last-child a {
+  background-position-x: right;
+}
+/* line 156, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li a {
+  -webkit-background-size: contain;
+}
+/* line 160, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.twitter a {
+  background: url(resources/icons/light/btn-page-nav-twitter.png) no-repeat;
+  background-position-y: center;
+}
+/* line 165, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.twitter a:active {
+  background-image: url(resources/icons/dark/btn-page-nav-twitter.png);
+}
+/* line 169, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.twitter:first-child a {
+  background-position-x: left;
+}
+/* line 173, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.twitter:last-child a {
+  background-position-x: right;
+}
+/* line 156, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li a {
+  -webkit-background-size: contain;
+}
+/* line 160, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.facebook a {
+  background: url(resources/icons/light/btn-page-nav-facebook.png) no-repeat;
+  background-position-y: center;
+}
+/* line 165, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.facebook a:active {
+  background-image: url(resources/icons/dark/btn-page-nav-facebook.png);
+}
+/* line 169, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.facebook:first-child a {
+  background-position-x: left;
+}
+/* line 173, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.facebook:last-child a {
+  background-position-x: right;
+}
+/* line 156, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li a {
+  -webkit-background-size: contain;
+}
+/* line 160, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.email a {
+  background: url(resources/icons/light/btn-page-nav-email.png) no-repeat;
+  background-position-y: center;
+}
+/* line 165, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.email a:active {
+  background-image: url(resources/icons/dark/btn-page-nav-email.png);
+}
+/* line 169, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.email:first-child a {
+  background-position-x: left;
+}
+/* line 173, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.more-drawer menu li.email:last-child a {
+  background-position-x: right;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_node-gallery.scss */
+.component.node-gallery {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.component.node-gallery > .region {
+  -webkit-box-flex: 1;
+}
+/* line 4, /Users/boazsender/git/bober/themes/default/components/_node-gallery.scss */
+.component.node-gallery .wrapper {
+  -webkit-box-flex: 1;
+}
+/* line 7, /Users/boazsender/git/bober/themes/default/components/_node-gallery.scss */
+.component.node-gallery .wrapper .image {
+  -webkit-background-size: cover;
+}
+/* line 12, /Users/boazsender/git/bober/themes/default/components/_node-gallery.scss */
+.component.node-gallery ol.indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+/* line 19, /Users/boazsender/git/bober/themes/default/components/_node-gallery.scss */
+.phone .component.node-gallery ol.indicator {
+  height: 15px;
+}
+/* line 22, /Users/boazsender/git/bober/themes/default/components/_node-gallery.scss */
+.phone .component.node-gallery ol.indicator li {
+  font-size: 40px;
+}
+/* line 27, /Users/boazsender/git/bober/themes/default/components/_node-gallery.scss */
+.tablet .component.node-gallery ol.indicator {
+  height: 30px;
+}
+/* line 30, /Users/boazsender/git/bober/themes/default/components/_node-gallery.scss */
+.tablet .component.node-gallery ol.indicator li {
+  font-size: 60px;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_node-title-banner.scss */
+.component.node-title-banner {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+/* line 279, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.node-title-banner {
+  padding: 8px;
+}
+/* line 283, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .component.node-title-banner {
+  padding: 12px;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.component.node-title-banner > .region {
+  -webkit-box-flex: 1;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/components/_node-title-banner.scss */
+.component.node-title-banner .image {
+  height: 50px;
+  width: 75px;
+  float: left;
+  border: 1px solid #e9e9e9;
+  padding: 5px;
+  background-position: center center;
+  margin-right: 10px;
+  -webkit-background-size: contain;
+}
+/* line 16, /Users/boazsender/git/bober/themes/default/components/_node-title-banner.scss */
+.component.node-title-banner header {
+  -webkit-box-flex: 1;
+}
+/* line 18, /Users/boazsender/git/bober/themes/default/components/_node-title-banner.scss */
+.component.node-title-banner header h3 {
+  font-size: 11px;
+  padding-bottom: 8px;
+}
+/* line 23, /Users/boazsender/git/bober/themes/default/components/_node-title-banner.scss */
+.component.node-title-banner header h2 {
+  font-size: 26px;
+  font-weight: normal;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_page-header-image.scss */
+.component.page-header-image {
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_pin-info.scss */
+.component.pin-info {
+  height: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  padding: 10px;
+}
+/* line 8, /Users/boazsender/git/bober/themes/default/components/_pin-info.scss */
+.component.pin-info .directions {
+  display: block;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3d3d3), to(#9d9d9d));
+  -webkit-border-radius: 2px;
+  border: 1px solid #9d9d9d;
+  color: #2b2b2b;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 2em;
+  padding: 2px 15px 0 15px;
+  margin: 5px 0;
+  text-shadow: rgba(255, 255, 255, 0.5) 0 -1px 0;
+  background-image: url("resources/icons/btn-map.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3d3d3), to(#9d9d9d));
+  background-position: left center, center center;
+  -webkit-background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 91, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.pin-info .directions:active {
+  background-image: url("resources/icons/btn-map.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b8b8b8), to(#848484));
+}
+/* line 101, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.pin-info .directions .label {
+  margin-right: 5px;
+  color: #7d7d7d;
+}
+/* line 12, /Users/boazsender/git/bober/themes/default/components/_pin-info.scss */
+.component.pin-info .website {
+  display: block;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3d3d3), to(#9d9d9d));
+  -webkit-border-radius: 2px;
+  border: 1px solid #9d9d9d;
+  color: #2b2b2b;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 2em;
+  padding: 2px 15px 0 15px;
+  margin: 5px 0;
+  text-shadow: rgba(255, 255, 255, 0.5) 0 -1px 0;
+  background-image: url("resources/icons/btn-website.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3d3d3), to(#9d9d9d));
+  background-position: left center, center center;
+  -webkit-background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 91, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.pin-info .website:active {
+  background-image: url("resources/icons/btn-website.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b8b8b8), to(#848484));
+}
+/* line 101, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.pin-info .website .label {
+  margin-right: 5px;
+  color: #7d7d7d;
+}
+/* line 16, /Users/boazsender/git/bober/themes/default/components/_pin-info.scss */
+.component.pin-info .phone-number {
+  display: block;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3d3d3), to(#9d9d9d));
+  -webkit-border-radius: 2px;
+  border: 1px solid #9d9d9d;
+  color: #2b2b2b;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 2em;
+  padding: 2px 15px 0 15px;
+  margin: 5px 0;
+  text-shadow: rgba(255, 255, 255, 0.5) 0 -1px 0;
+  background-image: url("resources/icons/btn-phone.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3d3d3), to(#9d9d9d));
+  background-position: left center, center center;
+  -webkit-background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 91, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.pin-info .phone-number:active {
+  background-image: url("resources/icons/btn-phone.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b8b8b8), to(#848484));
+}
+/* line 101, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.pin-info .phone-number .label {
+  margin-right: 5px;
+  color: #7d7d7d;
+}
+/* line 20, /Users/boazsender/git/bober/themes/default/components/_pin-info.scss */
+.component.pin-info .bottom {
+  -webkit-box-flex: 1;
+}
+/* line 23, /Users/boazsender/git/bober/themes/default/components/_pin-info.scss */
+.component.pin-info .bottom section {
+  line-height: 1.45em;
+  border-top: 1px solid #e9e9e9;
+  margin-top: 15px;
+  padding: 15px 2px 2px 0;
+}
+/* line 111, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-small .component.pin-info .bottom section {
+  font-size: 75%;
+}
+/* line 115, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-large .component.pin-info .bottom section {
+  font-size: 150%;
+}
+/* line 29, /Users/boazsender/git/bober/themes/default/components/_pin-info.scss */
+.component.pin-info .bottom section header {
+  margin-bottom: 1em;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/components/_search-results.scss */
+.component.search-results li {
+  line-height: 22px;
+  padding: 15px;
+  border-bottom: 1px solid #e9e9e9;
+}
+/* line 179, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.search-results li.image a {
+  background-image: url("resources/icons/dark/icon-asset-image.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 28px 26px;
+}
+/* line 179, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.search-results li.map a {
+  background-image: url("resources/icons/dark/icon-asset-map.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 28px 26px;
+}
+/* line 179, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.search-results li.audio a {
+  background-image: url("resources/icons/dark/icon-asset-audio.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 28px 26px;
+}
+/* line 179, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.component.search-results li.video a {
+  background-image: url("resources/icons/dark/icon-asset-video.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 28px 26px;
+}
+/* line 12, /Users/boazsender/git/bober/themes/default/components/_search-results.scss */
+.component.search-results li a {
+  color: black;
+  display: block;
+  padding-right: 50px;
+}
+/* line 18, /Users/boazsender/git/bober/themes/default/components/_search-results.scss */
+.component.search-results li.more-results {
+  font-size: .9em;
+  font-style: italic;
+  border-bottom: none;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_social-message.scss */
+.component.social-message {
+  margin: 8px;
+  padding: 10px 0;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/components/_social-message.scss */
+.component.social-message fieldset.auth {
+  margin-bottom: 10px;
+}
+/* line 8, /Users/boazsender/git/bober/themes/default/components/_social-message.scss */
+.component.social-message fieldset.auth input:first-child {
+  margin-bottom: 3px;
+  margin-right: 10px;
+}
+/* line 14, /Users/boazsender/git/bober/themes/default/components/_social-message.scss */
+.component.social-message textarea {
+  width: 96%;
+  height: 2.5em;
+  margin-bottom: 7px;
+}
+/* line 20, /Users/boazsender/git/bober/themes/default/components/_social-message.scss */
+.component.social-message .count {
+  color: #c7c7c7;
+}
+/* line 24, /Users/boazsender/git/bober/themes/default/components/_social-message.scss */
+.component.social-message fieldset.buttons {
+  text-align: right;
+}
+/* line 28, /Users/boazsender/git/bober/themes/default/components/_social-message.scss */
+.component.social-message fieldset.buttons input[type=submit],
+.component.social-message fieldset.buttons input[type=reset] {
+  min-width: 80px;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_video-caption.scss */
+.component.video-caption {
+  font-size: 14px;
+  color: #666666;
+}
+/* line 261, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .component.video-caption {
+  font-size: 13px;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/components/_video-caption.scss */
+.tablet .component.video-caption.short-caption {
+  text-align: center;
+}
+
+/* line 1, /Users/boazsender/git/bober/themes/default/components/_video-player.scss */
+.component.video-player {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+/* line 12, /Users/boazsender/git/bober/themes/default/components/_video-player.scss */
+.component.video-player .fake-video {
+  display: block;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 300, from(white), color-stop(0.5, #f6f6f6), to(#d0d0d0));
+  background-size: cover;
+}
+/* line 29, /Users/boazsender/git/bober/themes/default/components/_video-player.scss */
+.component.video-player .fake-video .play-button {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 1;
+  background: url(resources/icons/btn-video-player.png) no-repeat center center;
+}
+/* line 36, /Users/boazsender/git/bober/themes/default/components/_video-player.scss */
+.ios .component.video-player:not(.disabled) .fake-video {
+  display: none;
+}
+@media (orientation: portrait) {
+  /* line 42, /Users/boazsender/git/bober/themes/default/components/_video-player.scss */
+  .phone .component.video-player video,
+  .phone .component.video-player .fake-video {
+    width: 312px;
+    height: 208px;
+  }
+}
+@media (orientation: landscape) {
+  /* line 42, /Users/boazsender/git/bober/themes/default/components/_video-player.scss */
+  .phone .component.video-player video,
+  .phone .component.video-player .fake-video {
+    width: 192px;
+    height: 128px;
+  }
+}
+@media (orientation: portrait) {
+  /* line 55, /Users/boazsender/git/bober/themes/default/components/_video-player.scss */
+  .tablet .component.video-player video,
+  .tablet .component.video-player .fake-video {
+    width: 576px;
+    height: 384px;
+  }
+}
+@media (orientation: landscape) {
+  /* line 55, /Users/boazsender/git/bober/themes/default/components/_video-player.scss */
+  .tablet .component.video-player video,
+  .tablet .component.video-player .fake-video {
+    width: 432px;
+    height: 288px;
+  }
+}
+
+/* line 4, /Users/boazsender/git/bober/themes/default/components/_zoomable-image-gallery.scss */
+.component.zoomable-image-gallery li .wrapper {
+  height: 90%;
+}
+/* line 9, /Users/boazsender/git/bober/themes/default/components/_zoomable-image-gallery.scss */
+.component.zoomable-image-gallery .image-nav {
+  z-index: 1;
+  position: absolute;
+  width: 23px;
+  height: 50px;
+  top: 50%;
+  margin-top: -25px;
+  -webkit-background-origin: content-box;
+  -webkit-background-size: 50% 50%;
+}
+/* line 19, /Users/boazsender/git/bober/themes/default/components/_zoomable-image-gallery.scss */
+.component.zoomable-image-gallery .image-nav.prev {
+  display: block;
+  text-indent: -9999px;
+  background: rgba(0, 0, 0, 0.7) url("resources/icons/btn-arrow-left-27x50.png") no-repeat center center;
+  -webkit-background-size: 14 25;
+  width: 14;
+  height: 25;
+  background-position-x: left;
+  padding-left: 4px;
+  border-radius: 0 25px 25px 0;
+}
+/* line 26, /Users/boazsender/git/bober/themes/default/components/_zoomable-image-gallery.scss */
+.component.zoomable-image-gallery .image-nav.next {
+  display: block;
+  text-indent: -9999px;
+  background: rgba(0, 0, 0, 0.7) url("resources/icons/btn-arrow-right-27x50.png") no-repeat center center;
+  -webkit-background-size: 14 25;
+  width: 14;
+  height: 25;
+  background-position-x: right;
+  border-radius: 25px 0 0 25px;
+  padding-right: 4px;
+  right: 0;
+}
+/* line 35, /Users/boazsender/git/bober/themes/default/components/_zoomable-image-gallery.scss */
+.component.zoomable-image-gallery .caption {
+  line-height: 1.45em;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  font-size: 13px;
+}
+/* line 111, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-small .component.zoomable-image-gallery .caption {
+  font-size: 75%;
+}
+/* line 115, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.font-size-large .component.zoomable-image-gallery .caption {
+  font-size: 150%;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-phone.scss */
+.page.audio-with-images-phone .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.audio-with-images-phone .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.audio-with-images-phone .screen.index .region.page-nav {
+  -webkit-box-flex: 0;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-phone.scss */
+.page.audio-with-images-phone .screen.index .region.image-gallery {
+  border-bottom: 1px solid;
+  background-color: #f2f2f2;
+  border-bottom-color: #d4d4d4;
+}
+/* line 9, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-phone.scss */
+.page.audio-with-images-phone .screen.index .region.audio-gallery {
+  -webkit-box-flex: 0;
+  height: 40px;
+  background-color: #d4d4d4;
+}
+/* line 19, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-phone.scss */
+.page.audio-with-images-phone .screen.index .region.audio-gallery audio {
+  position: relative;
+  top: -5px;
+}
+/* line 26, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-phone.scss */
+.page.audio-with-images-phone .screen.index .region.bottom .child-nodes:not(.empty) {
+  padding-top: 10px;
+}
+/* line 30, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-phone.scss */
+.page.audio-with-images-phone .screen.index .region.bottom .body-text:not(.empty) {
+  padding: 10px;
+}
+/* line 35, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-phone.scss */
+.page.audio-with-images-phone .screen.index .component.audio-list:not(.empty) {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+/* line 40, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-phone.scss */
+.page.audio-with-images-phone .screen.detail {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.audio-with-images-phone .screen.detail > .region {
+  -webkit-box-flex: 1;
+}
+/* line 43, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-phone.scss */
+.page.audio-with-images-phone .screen.detail .region.header {
+  position: absolute;
+  width: 100%;
+}
+/* line 46, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-phone.scss */
+.page.audio-with-images-phone .screen.detail .region.header > * {
+  width: 100%;
+}
+
+/* line 3, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .component.audio-caption,
+.page.audio-with-images-tablet .component.image-caption {
+  font-size: 14px;
+  color: #666666;
+}
+/* line 261, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .page.audio-with-images-tablet .component.audio-caption, .phone
+.page.audio-with-images-tablet .component.image-caption {
+  font-size: 13px;
+}
+/* line 6, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .component.audio-caption:not(.empty),
+.page.audio-with-images-tablet .component.image-caption:not(.empty) {
+  padding: 10px;
+}
+/* line 11, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.audio-with-images-tablet .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.audio-with-images-tablet .screen.index .region.page-nav {
+  -webkit-box-flex: 0;
+}
+/* line 14, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index .region.image-container {
+  border-bottom: 1px solid;
+  background-color: #f2f2f2;
+  border-bottom-color: #d4d4d4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 0;
+  padding-top: 10px;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.audio-with-images-tablet .screen.index .region.image-container > .region {
+  -webkit-box-flex: 1;
+}
+/* line 20, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index .region.image-container .component.image-gallery {
+  position: static;
+  height: 450px;
+}
+@media (max-height: 850px) {
+  /* line 20, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+  .page.audio-with-images-tablet .screen.index .region.image-container .component.image-gallery {
+    height: 300px;
+  }
+}
+@media (max-height: 600px) {
+  /* line 20, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+  .page.audio-with-images-tablet .screen.index .region.image-container .component.image-gallery {
+    height: 190px;
+  }
+}
+@media (max-height: 350px) {
+  /* line 20, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+  .page.audio-with-images-tablet .screen.index .region.image-container .component.image-gallery {
+    height: 120px;
+  }
+}
+/* line 24, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index .region.image-container .region.caption {
+  -webkit-box-flex: 0;
+}
+/* line 29, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index .region.body-text-container {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.audio-with-images-tablet .screen.index .region.body-text-container > .region {
+  -webkit-box-flex: 1;
+}
+/* line 32, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index .region.body-text-container .child-nodes:not(.empty) {
+  padding-top: 10px;
+}
+/* line 36, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index .region.body-text-container .body-text:not(.empty) {
+  padding: 20px;
+}
+/* line 41, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index > .region.text-and-child-nodes {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.audio-with-images-tablet .screen.index > .region.text-and-child-nodes > .region {
+  -webkit-box-flex: 1;
+}
+@media (min-width: 800px) {
+  /* line 41, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+  .page.audio-with-images-tablet .screen.index > .region.text-and-child-nodes {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+}
+/* line 47, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index > .region.text-and-child-nodes .region.child-nodes-container {
+  margin-top: 10px;
+}
+/* line 50, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index > .region.text-and-child-nodes .region.child-nodes-container.empty {
+  -webkit-box-flex: .188889;
+}
+/* line 56, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index .region.audio-container {
+  -webkit-box-flex: 0;
+  border-top: 1px solid;
+  background-color: #f2f2f2;
+  border-top-color: #d4d4d4;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.audio-with-images-tablet .screen.index .region.audio-container > .region {
+  -webkit-box-flex: 1;
+}
+/* line 61, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index .region.audio-container > * {
+  width: 100%;
+}
+/* line 65, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index .region.audio-container .region.audio-active-player {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.audio-with-images-tablet .screen.index .region.audio-container .region.audio-active-player > .region {
+  -webkit-box-flex: 1;
+}
+/* line 68, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index .region.audio-container .region.audio-active-player .region {
+  -webkit-box-flex: 0;
+}
+/* line 73, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.index .region.audio-container audio {
+  position: relative;
+  top: -5px;
+}
+/* line 81, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.detail {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.audio-with-images-tablet .screen.detail > .region {
+  -webkit-box-flex: 1;
+}
+/* line 84, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.detail .region.header {
+  position: absolute;
+  width: 100%;
+}
+/* line 87, /Users/boazsender/git/bober/themes/default/page_defs/_audio-with-images-tablet.scss */
+.page.audio-with-images-tablet .screen.detail .region.header > * {
+  width: 100%;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_default.scss */
+.page.default .screen {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.default .screen > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.default .screen .region.page-nav {
+  -webkit-box-flex: 0;
+}
+/* line 6, /Users/boazsender/git/bober/themes/default/page_defs/_default.scss */
+.page.default .component.body-text {
+  padding: 10px;
+}
+/* line 9, /Users/boazsender/git/bober/themes/default/page_defs/_default.scss */
+.tablet .page.default .component.body-text {
+  padding: 20px;
+}
+/* line 16, /Users/boazsender/git/bober/themes/default/page_defs/_default.scss */
+.tablet .page.default .main-content .inner {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.tablet .page.default .main-content .inner > .region {
+  -webkit-box-flex: 1;
+}
+/* line 21, /Users/boazsender/git/bober/themes/default/page_defs/_default.scss */
+.tablet .page.default .main-content .inner .component.page-header-image, .tablet .page.default .main-content .inner .component.child-nodes {
+  -webkit-box-ordinal-group: 1;
+}
+/* line 25, /Users/boazsender/git/bober/themes/default/page_defs/_default.scss */
+.tablet .page.default .main-content .inner .component.body-text {
+  -webkit-box-ordinal-group: 2;
+}
+/* line 30, /Users/boazsender/git/bober/themes/default/page_defs/_default.scss */
+.tablet .page.default .main-content .inner .component.child-nodes, .tablet .page.default .main-content .inner .component.body-text {
+  width: 82.5%;
+}
+@media (min-width: 800px) {
+  /* line 30, /Users/boazsender/git/bober/themes/default/page_defs/_default.scss */
+  .tablet .page.default .main-content .inner .component.child-nodes, .tablet .page.default .main-content .inner .component.body-text {
+    width: 62.5%;
+    margin-left: 12.5%;
+  }
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_debug.scss */
+.page.debug .screen {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.debug .screen > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.debug .screen .region.page-nav {
+  -webkit-box-flex: 0;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_favorites.scss */
+.page.favorites .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.favorites .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.favorites .screen.index .region.page-nav {
+  -webkit-box-flex: 0;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_hotspots.scss */
+.page.hotspots .screen {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.hotspots .screen > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.hotspots .screen .region.page-nav {
+  -webkit-box-flex: 0;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_feed-item.scss */
+.page.feed-item .screen {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.feed-item .screen > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.feed-item .screen .region.page-nav {
+  -webkit-box-flex: 0;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_feed-list-phone.scss */
+.page.feed-list-phone .screen {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.feed-list-phone .screen > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.feed-list-phone .screen .region.page-nav {
+  -webkit-box-flex: 0;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_feed-list-tablet.scss */
+.page.feed-list-tablet .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.feed-list-tablet .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.feed-list-tablet .screen.index .region.page-nav {
+  -webkit-box-flex: 0;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_feed-list-tablet.scss */
+.page.feed-list-tablet .screen.index > .region:nth-child(2) {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.feed-list-tablet .screen.index > .region:nth-child(2) > .region {
+  -webkit-box-flex: 1;
+}
+/* line 8, /Users/boazsender/git/bober/themes/default/page_defs/_feed-list-tablet.scss */
+.page.feed-list-tablet .screen.index > .region:nth-child(2) > .region:first-child {
+  width: 320px;
+  -webkit-box-flex: 0;
+}
+/* line 13, /Users/boazsender/git/bober/themes/default/page_defs/_feed-list-tablet.scss */
+.page.feed-list-tablet .screen.index > .region:nth-child(2) > .region:last-child {
+  -webkit-box-shadow: -2px 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_full-screen-images.scss */
+.page.full-screen-images .screen {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.full-screen-images .screen > .region {
+  -webkit-box-flex: 1;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_full-screen-images.scss */
+.page.full-screen-images .screen .region.page-nav {
+  position: absolute;
+  width: 100%;
+}
+/* line 8, /Users/boazsender/git/bober/themes/default/page_defs/_full-screen-images.scss */
+.page.full-screen-images .screen .region.page-nav > * {
+  width: 100%;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_grid-view.scss */
+.page.grid-view .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.grid-view .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.grid-view .screen.index .region.page-nav {
+  -webkit-box-flex: 0;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_grid-view.scss */
+.page.grid-view .screen.index .region.page-header {
+  -webkit-box-flex: 0;
+}
+/* line 9, /Users/boazsender/git/bober/themes/default/page_defs/_grid-view.scss */
+.page.grid-view .screen.index .region.grid {
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5) inset;
+}
+/* line 15, /Users/boazsender/git/bober/themes/default/page_defs/_grid-view.scss */
+.page.grid-view .component.header-image img {
+  display: block;
+}
+/* line 20, /Users/boazsender/git/bober/themes/default/page_defs/_grid-view.scss */
+.page.grid-view .component.body-text {
+  padding: 9px 9px 0 9px;
+}
+/* line 23, /Users/boazsender/git/bober/themes/default/page_defs/_grid-view.scss */
+.tablet .page.grid-view .component.body-text {
+  padding: 10px 20px 0;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_google-map-phone.scss */
+.page.google-map-phone .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.google-map-phone .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.google-map-phone .screen.index .region.page-nav {
+  -webkit-box-flex: 0;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_google-map-phone.scss */
+.page.google-map-phone .screen.index .region.google-map {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.google-map-phone .screen.index .region.google-map > .region {
+  -webkit-box-flex: 1;
+}
+/* line 10, /Users/boazsender/git/bober/themes/default/page_defs/_google-map-phone.scss */
+.page.google-map-phone .screen.detail {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.google-map-phone .screen.detail > .region {
+  -webkit-box-flex: 1;
+}
+/* line 13, /Users/boazsender/git/bober/themes/default/page_defs/_google-map-phone.scss */
+.page.google-map-phone .screen.detail .region.header {
+  -webkit-box-flex: 0;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_google-map-tablet.scss */
+.page.google-map-tablet .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.google-map-tablet .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.google-map-tablet .screen.index .region.page-nav {
+  -webkit-box-flex: 0;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_google-map-tablet.scss */
+.page.google-map-tablet .screen.index .region.google-map {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.google-map-tablet .screen.index .region.google-map > .region {
+  -webkit-box-flex: 1;
+}
+/* line 9, /Users/boazsender/git/bober/themes/default/page_defs/_google-map-tablet.scss */
+.page.google-map-tablet .screen.index .region.pin-info {
+  position: absolute;
+  width: 100%;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_home-phone.scss */
+.page.home-phone .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.home-phone .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_home-phone.scss */
+.page.home-phone .screen.index > .region {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.home-phone .screen.index > .region > .region {
+  -webkit-box-flex: 1;
+}
+/* line 8, /Users/boazsender/git/bober/themes/default/page_defs/_home-phone.scss */
+.page.home-phone .screen.index > .region .component.body-text {
+  padding: 0 10px 10px 10px;
+}
+/* line 13, /Users/boazsender/git/bober/themes/default/page_defs/_home-phone.scss */
+.page.home-phone .screen.index .region.nav {
+  -webkit-box-flex: 0;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_home-tablet.scss */
+.page.home-tablet .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.home-tablet .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_home-tablet.scss */
+.page.home-tablet .screen.index > .region.top {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.home-tablet .screen.index > .region.top > .region {
+  -webkit-box-flex: 1;
+}
+/* line 8, /Users/boazsender/git/bober/themes/default/page_defs/_home-tablet.scss */
+.page.home-tablet .screen.index > .region.top .columns {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.home-tablet .screen.index > .region.top .columns > .region {
+  -webkit-box-flex: 1;
+}
+/* line 13, /Users/boazsender/git/bober/themes/default/page_defs/_home-tablet.scss */
+.page.home-tablet .screen.index > .region.nav {
+  -webkit-box-flex: 0;
+  margin-bottom: 20px;
+}
+/* line 18, /Users/boazsender/git/bober/themes/default/page_defs/_home-tablet.scss */
+.page.home-tablet .screen.index .component.body-text {
+  padding: 0 20px 0 20px;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_home-with-header-phone.scss */
+.page.home-with-header-phone .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.home-with-header-phone .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_home-with-header-phone.scss */
+.page.home-with-header-phone .screen.index .component.body-text {
+  padding: 10px;
+}
+/* line 9, /Users/boazsender/git/bober/themes/default/page_defs/_home-with-header-phone.scss */
+.page.home-with-header-phone .screen.index .region.header-image {
+  -webkit-box-flex: 0;
+}
+/* line 13, /Users/boazsender/git/bober/themes/default/page_defs/_home-with-header-phone.scss */
+.page.home-with-header-phone .screen.index .region.nav {
+  -webkit-box-flex: 0;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_home-with-header-tablet.scss */
+.page.home-with-header-tablet .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.home-with-header-tablet .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_home-with-header-tablet.scss */
+.page.home-with-header-tablet .screen.index .body-text {
+  padding: 20px 20px 0 20px;
+}
+/* line 9, /Users/boazsender/git/bober/themes/default/page_defs/_home-with-header-tablet.scss */
+.page.home-with-header-tablet .screen.index .child-nodes {
+  padding-top: 20px;
+}
+/* line 13, /Users/boazsender/git/bober/themes/default/page_defs/_home-with-header-tablet.scss */
+.page.home-with-header-tablet .screen.index .region.page-header {
+  -webkit-box-flex: 0;
+}
+/* line 17, /Users/boazsender/git/bober/themes/default/page_defs/_home-with-header-tablet.scss */
+.page.home-with-header-tablet .screen.index .region.nav {
+  -webkit-box-flex: 0;
+  margin-bottom: 20px;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-phone.scss */
+.page.images-and-text-phone .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.images-and-text-phone .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.images-and-text-phone .screen.index .region.page-nav {
+  -webkit-box-flex: 0;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-phone.scss */
+.page.images-and-text-phone .screen.index .region.image-container {
+  border-bottom: 1px solid;
+  background-color: #f2f2f2;
+  border-bottom-color: #d4d4d4;
+}
+/* line 18, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-phone.scss */
+.page.images-and-text-phone .screen.index .body-text:not(.empty) {
+  padding: 10px;
+}
+/* line 24, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-phone.scss */
+.page.images-and-text-phone .screen.detail {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.images-and-text-phone .screen.detail > .region {
+  -webkit-box-flex: 1;
+}
+/* line 27, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-phone.scss */
+.page.images-and-text-phone .screen.detail .region.header {
+  position: absolute;
+  width: 100%;
+}
+/* line 30, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-phone.scss */
+.page.images-and-text-phone .screen.detail .region.header > * {
+  width: 100%;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+.page.images-and-text-tablet .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.images-and-text-tablet .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.images-and-text-tablet .screen.index .region.page-nav {
+  -webkit-box-flex: 0;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+.page.images-and-text-tablet .screen.index .region.image-container {
+  border-bottom: 1px solid;
+  background-color: #f2f2f2;
+  border-bottom-color: #d4d4d4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 0;
+  padding-top: 10px;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.images-and-text-tablet .screen.index .region.image-container > .region {
+  -webkit-box-flex: 1;
+}
+/* line 11, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+.page.images-and-text-tablet .screen.index .region.image-container .component.body-text:not(.empty) {
+  padding: 0 10px 10px 10px;
+}
+/* line 15, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+.page.images-and-text-tablet .screen.index .region.image-container .region.caption {
+  -webkit-box-flex: 0;
+}
+/* line 19, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+.page.images-and-text-tablet .screen.index .region.image-container .component.image-gallery {
+  position: static;
+  height: 450px;
+}
+@media (max-height: 850px) {
+  /* line 19, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+  .page.images-and-text-tablet .screen.index .region.image-container .component.image-gallery {
+    height: 300px;
+  }
+}
+@media (max-height: 600px) {
+  /* line 19, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+  .page.images-and-text-tablet .screen.index .region.image-container .component.image-gallery {
+    height: 190px;
+  }
+}
+@media (max-height: 350px) {
+  /* line 19, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+  .page.images-and-text-tablet .screen.index .region.image-container .component.image-gallery {
+    height: 120px;
+  }
+}
+/* line 25, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+.page.images-and-text-tablet .screen.index .region.text-and-child-nodes {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.images-and-text-tablet .screen.index .region.text-and-child-nodes > .region {
+  -webkit-box-flex: 1;
+}
+@media (min-width: 800px) {
+  /* line 25, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+  .page.images-and-text-tablet .screen.index .region.text-and-child-nodes {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+}
+/* line 32, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+.page.images-and-text-tablet .screen.index .region.text-and-child-nodes .component.body-text:not(.empty) {
+  padding: 20px;
+}
+/* line 36, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+.page.images-and-text-tablet .screen.index .region.text-and-child-nodes .region.child-nodes-container {
+  margin-top: 10px;
+}
+/* line 39, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+.page.images-and-text-tablet .screen.index .region.text-and-child-nodes .region.child-nodes-container.empty {
+  -webkit-box-flex: .188889;
+}
+/* line 46, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+.page.images-and-text-tablet .screen.detail {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.images-and-text-tablet .screen.detail > .region {
+  -webkit-box-flex: 1;
+}
+/* line 49, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+.page.images-and-text-tablet .screen.detail .region.header {
+  position: absolute;
+  width: 100%;
+}
+/* line 52, /Users/boazsender/git/bober/themes/default/page_defs/_images-and-text-tablet.scss */
+.page.images-and-text-tablet .screen.detail .region.header > * {
+  width: 100%;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_location-list.scss */
+.page.location-list .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.location-list .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.location-list .screen.index .region.page-nav {
+  -webkit-box-flex: 0;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_location-list.scss */
+.page.location-list .screen.index .component.image-gallery {
+  position: relative;
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  height: 200px;
+  padding-top: 10px;
+}
+/* line 13, /Users/boazsender/git/bober/themes/default/page_defs/_location-list.scss */
+.page.location-list .screen.index .component.body-text {
+  color: #4d4d4d;
+  font-size: 15px;
+}
+/* line 279, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.phone .page.location-list .screen.index .component.body-text {
+  padding: 8px;
+}
+/* line 283, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.tablet .page.location-list .screen.index .component.body-text {
+  padding: 12px;
+}
+/* line 18, /Users/boazsender/git/bober/themes/default/page_defs/_location-list.scss */
+.page.location-list .screen.index .component.body-text h4 {
+  font-weight: bold;
+  font-size: inherit;
+}
+/* line 25, /Users/boazsender/git/bober/themes/default/page_defs/_location-list.scss */
+.page.location-list .screen.detail {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.location-list .screen.detail > .region {
+  -webkit-box-flex: 1;
+}
+/* line 28, /Users/boazsender/git/bober/themes/default/page_defs/_location-list.scss */
+.page.location-list .screen.detail .region.detail-title {
+  -webkit-box-flex: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_node-gallery.scss */
+.page.node-gallery .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.node-gallery .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.node-gallery .screen.index .region.page-nav {
+  -webkit-box-flex: 0;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_node-gallery.scss */
+.page.node-gallery .screen.index .region.drop-down-text {
+  -webkit-box-flex: 0;
+}
+/* line 8, /Users/boazsender/git/bober/themes/default/page_defs/_node-gallery.scss */
+.page.node-gallery .screen.index .region.drop-down-text .component.drop-down-text {
+  width: 100%;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_search.scss */
+.page.search .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.search .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_search.scss */
+.page.search .screen.index .region.search-input {
+  -webkit-box-flex: 0;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-phone.scss */
+.page.videos-and-text-phone .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.videos-and-text-phone .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.videos-and-text-phone .screen.index .region.page-nav {
+  -webkit-box-flex: 0;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-phone.scss */
+.page.videos-and-text-phone .screen.index .region.player-container {
+  border-bottom: 1px solid;
+  background-color: #f2f2f2;
+  border-bottom-color: #d4d4d4;
+  padding-bottom: 40px;
+}
+/* line 11, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-phone.scss */
+.page.videos-and-text-phone .screen.index .region.listing-and-children .component.video-list:not(.empty) {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+/* line 15, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-phone.scss */
+.page.videos-and-text-phone .screen.index .region.listing-and-children .component.child-nodes:not(.empty) {
+  padding-top: 10px;
+}
+/* line 19, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-phone.scss */
+.page.videos-and-text-phone .screen.index .region.listing-and-children .component.body-text {
+  padding: 10px 20px 0 10px;
+}
+
+/* line 2, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+.page.videos-and-text-tablet .screen.index {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.videos-and-text-tablet .screen.index > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.videos-and-text-tablet .screen.index .region.page-nav {
+  -webkit-box-flex: 0;
+}
+/* line 5, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+.page.videos-and-text-tablet .screen.index .region.video-container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  border-bottom: 1px solid;
+  background-color: #f2f2f2;
+  border-bottom-color: #d4d4d4;
+  padding-bottom: 20px;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.videos-and-text-tablet .screen.index .region.video-container > .region {
+  -webkit-box-flex: 1;
+}
+/* line 10, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+.page.videos-and-text-tablet .screen.index .region.video-container .region.player-container {
+  margin-top: 10px;
+}
+/* line 14, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+.page.videos-and-text-tablet .screen.index .region.video-container .region.video-caption {
+  -webkit-box-flex: 0;
+}
+/* line 19, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+.page.videos-and-text-tablet .screen.index .region.text-and-listings {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.videos-and-text-tablet .screen.index .region.text-and-listings > .region {
+  -webkit-box-flex: 1;
+}
+@media (min-width: 800px) {
+  /* line 19, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+  .page.videos-and-text-tablet .screen.index .region.text-and-listings {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+}
+/* line 26, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+.page.videos-and-text-tablet .screen.index .region.text-and-listings .region.listings-container {
+  margin-top: 10px;
+}
+/* line 29, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+.page.videos-and-text-tablet .screen.index .region.text-and-listings .region.listings-container.empty {
+  -webkit-box-flex: .188889;
+}
+/* line 34, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+.page.videos-and-text-tablet .screen.index .region.text-and-listings .child-nodes:not(.empty) {
+  padding-top: 10px;
+}
+/* line 39, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+.page.videos-and-text-tablet .screen.index .region.text-and-listings > .region:nth-child(1) .body-text:not(.empty) {
+  padding: 20px;
+}
+/* line 43, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+.page.videos-and-text-tablet .screen.index .region.text-and-listings > .region:nth-child(1) .body-text.video-caption {
+  padding: 10px 20px 0 10px;
+}
+/* line 49, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+.page.videos-and-text-tablet .screen.index .region.text-and-listings > .region:nth-child(2) .body-text {
+  padding: 10px;
+}
+/* line 55, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+.page.videos-and-text-tablet .screen.index .component.video-caption {
+  padding: 10px;
+}
+/* line 59, /Users/boazsender/git/bober/themes/default/page_defs/_videos-and-text-tablet.scss */
+.page.videos-and-text-tablet .screen.index .video-list + .child-nodes {
+  margin-top: .4em;
+}
+
+/* line 32 */
+.page.camera .screen {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/* line 4, /Users/boazsender/sources/mulberry/app/toura/style/_layout.scss */
+.page.camera .screen > .region {
+  -webkit-box-flex: 1;
+}
+/* line 291, /Users/boazsender/git/bober/themes/default/helpers/_mixins.scss */
+.page.camera .screen .region.page-nav {
+  -webkit-box-flex: 0;
+}
