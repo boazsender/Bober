@@ -25,14 +25,7 @@ mulberry.component('Camera', {
         image: src,
         name: "Bob the rooster"
       },
-      success: function(r){ console.log(r) }
+      success: function(r){ console.log(r); }
     });
-
-    
-    // var pic = new Image();
-    // pic.src = src;
-    // pic.width = 200;
-    // dojo.place(pic, this.gallery);
-    // dojo.publish('/content/update'); // refresh the scroller
   }
 });
