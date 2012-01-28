@@ -3,3 +3,4 @@
  * any dependencies you introduce via `mulberry create component`.
  */
 dojo.require('client.routes');
+dojo.require('client.components.Camera');
