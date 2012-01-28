@@ -10,7 +10,7 @@ dojo.provide('client.routes');
  *    mulberry create route '/foo/:bar'
  *
  */
- 
- mulberry.page('/takeapicture', {
-   pageDef : 'camera'
- }, true);
+
+mulberry.page('/takeapicture', {
+  pageDef : 'camera'
+}, true);

@@ -1,15 +1,8 @@
-device:
+camera:
   screens:
     - name: index
       regions:
         # Each region can either be a row or a column
-        - # By default, regions will all equally fill the space of their
-          # container. Setting `size: fixed` will cause it to take the
-          # size of its contents
-          className: pagenav-container
-          components:
-            - PageNav
-        - # By default, `scrollable` is false
-          scrollable: true
+        - scrollable: true
           components:
           - custom.Camera
