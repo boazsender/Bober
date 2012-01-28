@@ -7,6 +7,25 @@ mulberry.component('Camera', {
     this.connect(this.pictureButton, 'click', '_takePicture');
     
     this.$domNode.append('<h1>I AM TOUCHING THE DOM FOR THE FIRST TIME</h1>');
+    
+    this.$domNode.find('form').submit(function( e ){
+      e.preventDefault();
+      var obj = $(this).serializeObject();
+            
+      console.log(JSON.stringify(obj));
+
+      $(this).ajaxSubmit({
+        success: function(data) {
+          console.log("success!", data);
+          
+        },
+        error: function( xhr, responsetext) {
+          console.log("error", xhr)
+        }
+      });
+      
+    });
+    
   },
 
   _takePicture : function(e) {
@@ -15,45 +34,21 @@ mulberry.component('Camera', {
     navigator.camera.DestinationType.DATA_URL
     
     toura.app.PhoneGap.camera.getPicture({
-      destinationType : navigator.camera.DestinationType.DATA_URL,
-      encodingType: Camera.EncodingType.PNG,
-      quality : 30
+      destinationType : navigator.camera.DestinationType.FILE_URI //,
+      // encodingType: Camera.EncodingType.PNG,
+      // quality : 30
     }).then(dojo.hitch(this, '_handlePicture'));
   },
 
   _handlePicture : function(src) {
     var that = this;
     
-    that.$domNode.append('<h1>I AM TOUCHING THE DOM AGAIN</h1>');
+    that.$domNode.append('<h1>I AM TOUCHING THE DOM AGAIN</h1> + <img width="100px" src="' + src + '">');
     
     console.log('BOAZ THE STRING IS HERE > ' + src)
     
-    $.ajax({
-      type: 'GET',
-      url: 'http://api.imgur.com/2/upload.json',
-      data: {
-        key:"616994a9b83bdeb8ae77e4de9889bb96",
-        type: "file",
-        image: src,
-        name: "Bob the rooster"
-      },
-      success: function(r){ 
-        console.log('BOAZ, THIS MEANS THAT THE IMGUR SUBMISSION WAS SUCCESSFUL');
-        that.$domNode.append('<a href="' + r.upload.links.imgur_page + '">' + r.upload.links.imgur_page + '</a>');
-      },
-      error: function(r){ 
-        that.$domNode.append('<h1>IT BROKE</h1>');
-        
-        console.log('BOAZ > ' + JSON.stringify(r))
-        
-      }
-    });
-
+    $('#image').val(src);
     
-    // var pic = new Image();
-    // pic.src = src;
-    // pic.width = 200;
-    // dojo.place(pic, this.gallery);
-    // dojo.publish('/content/update'); // refresh the scroller
+    
   }
 });

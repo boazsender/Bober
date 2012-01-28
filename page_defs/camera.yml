@@ -3,6 +3,5 @@ camera:
     - name: index
       regions:
         # Each region can either be a row or a column
-        - scrollable: true
-          components:
-          - custom.Camera
+          - components:
+            - custom.Camera

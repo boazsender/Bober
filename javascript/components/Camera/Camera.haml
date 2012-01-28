@@ -2,4 +2,10 @@
   %button{ dojoAttachPoint : 'pictureButton' } Take a picture
   %div{ dojoAttachPoint : 'gallery' }
   %div{ dojoAttachPoint : 'imageSrc' }
-
+  %form{ action : 'http://api.imgur.com/2/upload.json', method : 'POST' }
+    %input{ type : 'hidden', name : 'image' }
+    %input{ type : 'hidden', name: 'key', value : '616994a9b83bdeb8ae77e4de9889bb96' }
+    %input{ required: 'true', type : 'text', name : 'name', placeholder: 'name' }
+    %input{ required: 'true', type : 'text', name : 'caption', placeholder: 'caption' }
+    %input{ required: 'true', type : 'text', name : 'title', placeholder: 'title' }
+    %input{ required: 'true', type : 'submit', name : 'submit', value: 'post it!' }

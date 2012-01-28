@@ -664,8 +664,7 @@ toura.pageDef('camera', {
         {
           "components": [
             "custom.Camera"
-          ],
-          "scrollable": true
+          ]
         }
       ],
       "name": "index"

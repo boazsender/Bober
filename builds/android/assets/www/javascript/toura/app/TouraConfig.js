@@ -6,7 +6,7 @@ toura.app = toura.app || {};
 toura.app._Config = {
   id     : 'bober',
   locale : 'en-US',
-  buildDate : 1327782922,
+  buildDate : 1327786959,
   appVersion : '4.1.0',
 
   updateUrl  : '',

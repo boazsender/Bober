@@ -4,3 +4,5 @@
  */
 dojo.require('client.routes');
 dojo.require('client.components.Camera');
+dojo.require('client.vendor.jquery-form');
+dojo.require('client.vendor.jquery-ba-serializeobject');
